@@ -1,0 +1,142 @@
+td.postposition {
+width: 38px;
+}
+
+td.postposition a {
+height: 25px;
+width: 25px;
+line-height: 25px;
+font-size: 15px;
+font-weight: bold;
+font-family: Arial;
+text-align: center;
+vertical-align: baseline;
+border: 1px solid black;
+margin: 4px 0 4px 5px;
+background-repeat: no-repeat;
+background-position: top right;
+cursor: default;
+display: block;
+text-decoration: none;
+color: white!important;
+}
+
+
+td.pp1 a {
+background-color:#D20001; 
+}
+
+td.pp2 a {
+background-color: white; 
+color: black!important;
+}
+
+td.pp3 a {
+background-color: #014282; 
+}
+
+td.pp4 a {
+background-color: #ffdd00;
+color: black!important; 
+}
+
+td.pp5 a {
+background-color: #01803d; 
+}
+
+td.pp6 a {
+background-color: black;
+color: #ffdd00!important; 
+}
+
+td.pp7 a {
+background-color: #dc7d29; 
+color: black!important;
+}
+
+td.pp8 a {
+background-color: #f387b8; 
+color: black!important;
+}
+
+td.pp9 a {
+background-color: #00bae0; 
+color: black!important;
+}
+
+td.pp10 a {
+background-color: #330066; 
+}
+
+td.pp11 a {
+background-color: #b2b7bb; 
+color: red!important;
+}
+
+td.pp12 a {
+background-color: #8dc73f; 
+color: black!important;
+}
+
+td.pp13 a {
+background-color: #54301a; 
+}
+
+td.pp14 a {
+background-color: #8a2529;
+color: #ffdd00!important;
+}
+
+td.pp15 a {
+background-color: #c5c19e; 
+color: black!important;
+}
+
+td.pp16 a {
+background-color: #749dd3; 
+color: black!important;
+}
+
+td.pp17 a {
+background-color: #002f5d; 
+}
+
+td.pp18 a {
+background-color: #024a1a; 
+color: #ffdd00!important;
+}
+
+td.pp19 a {
+background-color: #007db8; 
+color: black!important;
+}
+
+td.pp20 a {
+background-color: #ed008c; 
+color: yellow!important;
+}
+
+td.pp21 a {
+background-color: #c5b4e3; 
+color: #000099!important;
+}
+
+td.pp22 a {
+background-color: #3f526f; 
+color: white!important;
+}
+
+td.pp23 a {
+background-color: #9abeaa; 
+color: #006600!important;
+}
+
+td.pp24 a {
+background-color: #3e4827; 
+color: white!important;
+}
+
+td.ppAE a {
+background-color: none; 
+color: black!important;
+}

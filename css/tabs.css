@@ -1,0 +1,117 @@
+/* set up the overall width of the menu div, the font and the margins with a relative position*/
+
+
+#menu {
+font-family: verdana, arial, sans-serif; 
+width:678px; 
+margin:0 0 20px 0; 
+position:relative;
+z-index:100;
+height:250px;
+}
+/* remove the bullets and set the margin and padding to zero for the unordered list */
+#menu ul {
+padding:0; 
+margin:0;
+list-style: none;
+border:0;
+}
+#menu ul table {border-collapse:collapse; margin:-1px -10px; font-size:1em;}
+
+/* float the list so that the items are in a line */
+#menu ul li {
+float:left; 
+}
+/* style the links to be 249px wide by 30px high with a top and right border 1px solid white. Set the background color and the font size. */
+#menu ul li a, #menu ul li a:visited {
+display:block; 
+text-align:center; 
+text-decoration:none; 
+width:249px; 
+height:30px; 
+color:#000; 
+border:1px solid #fff;
+border-width:1px 1px 0 0;
+/* background:#c9c9a7; */
+background:#999999; 
+line-height:30px; 
+font-size:11px;
+}
+/* make the dropdown ul invisible */
+#menu ul ul {
+position:absolute; left:-9999px; height:0; z-index:10;
+}
+
+/* set the background and foreground color of the main menu items on hover */
+#menu ul li#selected a{
+color:#fff; 
+/* background:#938b59; */
+background:#666666;
+}
+#menu ul li a:hover,
+#menu ul li:hover a {
+color:#fff; 
+/* background:#b3ab79; */
+background:#707070;
+}
+/* make the sub menu ul visible and position it beneath the first list item */
+#menu ul li#selected ul {
+top:30px; 
+height:auto;
+left:0; 
+text-align:left;
+}
+#menu ul :hover ul {
+top:30px; 
+height:auto;
+left:0; 
+text-align:left;
+z-index:100;
+}
+/* make the sub menu ul li the full width with padding and border. Add an auto scroll bar */
+#menu ul li#selected ul li,
+#menu ul :hover ul li {
+background:#eee; 
+color:#000;
+padding:10px;
+width:627px;
+height:190px;
+overflow:auto;
+/* border:20px solid #b3ab79; */
+border:15px solid #707070;
+}
+#menu ul li#selected ul li {
+/* border:20px solid #938b59; */
+border:15px solid #666666;
+}
+
+/*float the image left with padding and no border */
+#menu ul li#selected ul li img,
+#menu ul :hover ul li img {
+float:left; 
+padding:10px 10px 10px 0; 
+border:0;
+}
+/* style the paragraph font height */
+#menu ul li#selected ul li p,
+#menu ul :hover ul li p {
+font-size:0.9em;
+line-height:1.8em;
+}
+/* style the background and foreground color of the submenu links */
+#menu ul li#selected ul li a,
+#menu ul :hover ul li a {
+display:inline;
+background:#eee;
+color:#c00;
+text-decoration:underline;
+border:0;
+line-height:1.8em;
+}
+/* style the background and forground colors of the links on hover */
+#menu ul li#selected ul li a:hover,
+#menu ul :hover ul li a:hover {
+text-decoration:none; 
+color:#000;
+
+}

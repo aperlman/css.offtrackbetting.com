@@ -1,0 +1,1517 @@
+a:link {
+	color:#5f7d95;
+	text-decoration:none;
+}
+
+a:visited {
+	text-decoration:none;
+	color:#5f7d95;
+}
+
+a:hover {
+	color:#000;
+}
+
+a:active {
+	color:#693;
+}
+
+body {
+	align:0 auto;
+	padding:0;
+	margin:0;
+	background:#f5f5f5 url(https://img.offtrackbetting.com/images/backgrounds/bg_gradient3.jpg) top repeat-x;
+	font:normal 100% Verdana,Arial,Helvetica,sans-serif;
+}
+
+dl {
+	font-size:.75em;
+}
+
+dl ol {
+	font-size:1em;
+}
+
+dd {
+	padding:4px;
+	margin:0 0 20px;
+}
+
+dt {
+	font-weight:700;
+	border-bottom:2px solid #000;
+}
+
+form {
+	margin:0;
+}
+
+h1,h2,h3,.section-header {
+	height:21px;
+	line-height:21px;
+	font-weight:700;
+	font-size:.75em;
+	font-family:Verdana,Helvetica,sans-serif;
+	margin:0;
+	padding:0 0 0 7px;
+	color:#fff;
+	background-color:#1b415b;
+	border:1px solid #5a7285;
+	text-transform:uppercase;
+	background:url(https://img.offtrackbetting.com/images/backgrounds/header_bg.png) top left;
+	text-align:left;
+}
+
+h3,.section-header {
+	display:block;
+}
+
+h1 {
+	color:#efefe7;
+}
+
+h3 a:link,h3 a:visited,h3 a:hover {
+	text-decoration:underline;
+}
+
+h3 a:hover {
+	color:#1b3245;
+}
+
+h4 {
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:.75em;
+	font-weight:700;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+h5 {
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:.75em;
+	margin-top:0;
+	margin-bottom:0;
+	padding:3px 0 7px;
+	border-bottom:1px #2b465b solid;
+	height:9px;
+	background:none;
+	color:#fff;
+}
+
+ol {
+	padding-left:20px;
+	font-size:.75em;
+}
+
+p {
+	margin:0 0 1.1em;
+	padding:3px;
+	font-size:.75em;
+}
+
+table {
+	font-size:.75em;
+}
+
+th {
+	text-align:left!important;
+}
+
+#container {
+	padding:0;
+	margin:0;
+	width:985px;
+	position:relative;
+	margin:0 auto;
+	text-align:left;
+	background-color:transparent;
+}
+
+#head {
+	padding:0;
+	clear:both;
+	height:64px;
+	position:relative;
+	width:100%;
+	z-index:1;
+}
+
+#accountNumber {
+	margin-left:8px;
+}
+
+#accountNumber,#pin {
+	background:url(https://img.offtrackbetting.com/images/top_header/input_login.gif) no-repeat;
+	color:#666;
+	width:116px;
+	height:20px;
+	padding:2px 0 0;
+	margin:0;
+	border:0;
+	text-indent:5px;
+	vertical-align:middle;
+}
+
+#login {
+	margin:0 5px 0 0;
+	padding:0;
+}
+
+#loginLinks {
+	color:#fff;
+	font-size:.625em;
+	width:100%;
+	white-space:nowrap;
+}
+
+#loginLink {
+	float:left;
+	padding:0;
+	margin:0;
+}
+
+#loginLinks a {
+	color:#fff;
+}
+
+#loginLinks a:hover {
+	text-decoration:underline;
+}
+
+#loginRow {
+	position:absolute;
+	top:35px;
+	right:0;
+	background:transparent;
+	height:39px;
+	padding:0;
+	margin:0;
+	font-size:.625em;
+}
+
+#loginRow a:hover {
+	color:#fff;
+}
+
+#footer {
+	padding:0;
+	background-color:#f5f5f5;
+	width:985px;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	color:#999;
+	text-align:center;
+	font-size:.75em;
+	border-top:2px solid #ccc;
+	padding-top:15px;
+	margin:0 auto;
+}
+
+#footer a {
+	color:#7c9997!important;
+}
+
+#footer a:hover {
+	color:#000!important;
+}
+
+#goMobile {
+	height:60px;
+	background:none repeat scroll 0 0 #000;
+	border:1px solid #d9d9d9;
+	bottom:0;
+	box-shadow:0 4px 10px rgba(0,0,0,0.8);
+	position:fixed;
+	left:0;
+	right:0;
+	z-index:100;
+	overflow:hidden;
+	text-align:center;
+	font-size:48px;
+	color:#fff;
+}
+
+#testimonials {
+	width:298px;
+	background-color:#0F3859;
+	padding-bottom:10px;
+	border:1px solid #999;
+}
+
+#testimonial {
+	padding:5px 5px 0;
+}
+
+#testimonial blockquote {
+	background:#35546e;
+	background:-moz-linear-gradient(top,#35546e 0%,#0f3859 100%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#35546e),color-stop(100%,#0f3859));
+	background:-webkit-linear-gradient(top,#35546e 0%,#0f3859 100%);
+	background:-o-linear-gradient(top,#35546e 0%,#0f3859 100%);
+	background:-ms-linear-gradient(top,#35546e 0%,#0f3859 100%);
+	background:linear-gradient(to bottom,#35546e 0%,#0f3859 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#35546e',endColorstr='#0f3859',GradientType=0);
+	padding:5px 5px 10px 15px;
+	margin:0;
+	font:italic 9pt Verdana,Arial,Helvetica,sans-serif;
+	text-indent:15px;
+	color:#fff;
+}
+
+#testimonial .cite {
+	vertical-align:middle;
+	min-height:15px;
+	font:normal 8pt Verdana,Arial,Helvetica,sans-serif;
+	text-align:right;
+	padding-right:5px;
+	background-color:#0F3859;
+	border-bottom:#fff 1px solid;
+	color:#fff;
+}
+
+#testimonials .joinlink {
+	vertical-align:bottom;
+	min-height:10px;
+	text-align:center;
+	margin-top:10px;
+	color:#fff;
+}
+
+#testimonials .joinlink a,#testimonials .joinlink a:hover,#testimonials .joinlink a:visited {
+	color:#fff;
+	text-decoration:none;
+}
+
+#testimonials .joinlink a:hover {
+	color:#fff;
+	text-decoration:underline;
+}
+
+#userText {
+	vertical-align:top;
+}
+
+#wrapper {
+	padding:0;
+	padding-top:7px;
+	margin:0;
+	left:0;
+	text-align:left;
+	float:left;
+	width:100%;
+}
+
+.allhead {
+	padding:0;
+	margin:0 auto;
+	width:985px;
+	height:230px;
+}
+
+.ahMem {
+	height:171px;
+}
+
+.ahBannerOn {
+	height:287px;
+}
+
+.archive,a.archive:link {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:.9em;
+	color:#25669B;
+	text-decoration:none;
+	font-weight:700;
+}
+
+a.archive:visited {
+	text-decoration:none;
+	color:#25669B;
+}
+
+a.archive:hover {
+	color:#000;
+}
+
+a.archive:active {
+	color:#693;
+}
+
+.whitelink,a.whitelink:link {
+	color:#fff;
+	text-decoration:none;
+}
+
+a.whitelink:visited {
+	text-decoration:none;
+	color:#fff;
+}
+
+a.whitelink:hover {
+	color:#fff;
+	text-decoration:underline;
+}
+
+a.fb_text:link {
+	color:#5f7d95;
+	text-decoration:none;
+}
+
+a.fb_text:visited {
+	text-decoration:none;
+	color:#5f7d95;
+}
+
+a.fb_text:hover {
+	color:#5f7d95;
+	text-decoration:underline;
+}
+
+a.fb_text:active {
+	color:#5f7d95;
+}
+
+a.lowkey:link a.lowkey:visited {
+	color:inherit;
+	text-decoration:none;
+}
+
+a.lowkey:hover,a.lowkey:active {
+	color:inherit;
+	text-decoration:underline;
+}
+
+a.mob_link,a.mob_link:visited,a.mob_link:hover {
+	color:#fff;
+	text-decoration:none;
+}
+
+a.mob_link_tel:hover,a.mob_link:hover {
+	text-decoration:underline;
+}
+
+.banner-h {
+	background:transparent;
+	height:52px;
+	padding:0;
+	z-index:2;
+	margin:7px 0 0;
+	_margin:7px 0 0 0;
+	clear:both;
+}
+
+.bh-sub {
+	height:52px;
+	width:982px;
+	padding:0;
+	margin:7px 0 0;
+	clear:both;
+	border:1px #000 solid;
+	background:#fff;
+	background:-moz-linear-gradient(top,#fff 0%,#4d4d4d 100%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(100%,#4d4d4d));
+	background:-webkit-linear-gradient(top,#fff 0%,#4d4d4d 100%);
+	background:-o-linear-gradient(top,#fff 0%,#4d4d4d 100%);
+	background:-ms-linear-gradient(top,#fff 0%,#4d4d4d 100%);
+	background:linear-gradient(to bottom,#fff 0%,#4d4d4d 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#4d4d4d',GradientType=0);
+}
+
+.bh-transbg {
+	background:#011F4A 0 0 no-repeat;
+	opacity:.5;
+	filter:alpha(opacity=50);
+	width:280px;
+	height:42px;
+	border:1px #fff solid;
+	border-radius:.4em;
+	position:absolute;
+	top:156px;
+	right:8px;
+}
+
+.bh-buttonrow {
+	color:#fff;
+	position:absolute;
+	top:156px;
+	left:0;
+	width:982px;
+	height:45px;
+}
+
+.bh-buttonrow a,.bh-buttonrow a:visited,.bh-buttonrow a:hover {
+	color:#fff;
+}
+
+.bh-buttonrow a:hover {
+	text-decoration:underline;
+}
+
+.bh-buttonText {
+	float:right;
+	position:relative;
+	top:2px;
+	right:5px;
+	font-size:24px;
+	line-height:40px;
+	text-align:center;
+	width:280px;
+	height:40px;
+	font-weight:700;
+}
+
+.bh-buttonArrows {
+	background:url(https://img.offtrackbetting.com/images/home-main-bottom-text.png) no-repeat top left;
+	width:660px;
+	height:45px;
+	float:left;
+	position:relative;
+	top:0;
+	left:8px;
+}
+
+.threesteps {
+	float:left;
+	position:relative;
+	top:0;
+	left:30px;
+	font-size:14px;
+	line-height:45px;
+	text-align:center;
+	width:190px;
+	height:45px;
+	font-weight:100;
+}
+
+.threesteps2 {
+	left:50px;
+	width:210px;
+}
+
+.threesteps3 {
+	left:60px;
+}
+
+.bet_guide_nav {
+	float:right;
+	margin-right:4px;
+	padding:0;
+	display:inline;
+	line-height:1.5625em;
+	font-size:.9375em;
+	color:#d0d7da;
+	font-weight:700;
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+.bg-elements {
+	background:transparent url(https://img.offtrackbetting.com/images/backgrounds/background3.jpg) 50% 0 no-repeat;
+}
+
+.bold {
+	font-weight:700;
+}
+
+.clear {
+	clear:both;
+}
+
+.datelight {
+	color:#7A7A7A;
+	font:10px Verdana,Arial,Helvetica,sans-serif;
+}
+
+.disclaimer {
+	font-size:.91em;
+	color:#5f7d95;
+	margin:0;
+	padding:0 0 10px;
+	width:975px;
+}
+
+.even {
+	background-color:#f5f5f5;
+	color:inherit;
+}
+
+.even2 {
+	background-color:#d7e1e8;
+	color:inherit;
+}
+
+.errorMsg {
+	background-color:#f5f5f5;
+	color:maroon;
+	font-size:.9em;
+	border:1px solid #999;
+	padding:5px;
+}
+
+.faqAnswers .faqTopLink a {
+	display:block;
+	text-align:right;
+}
+
+.faqAnswers dt {
+	border-bottom:solid 1px #000;
+	font-weight:700;
+}
+
+.floatR {
+	float:right;
+}
+
+.floatL {
+	float:left;
+}
+
+.footer-title {
+	font-weight:700;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	color:#6a6969;
+}
+
+.gradient-container {
+	background:#fff url(https://img.offtrackbetting.com/images/backgrounds/gradient_back.jpg) bottom repeat-x;
+	border:2px solid #fff;
+	padding:5px;
+}
+
+.gradient-container p {
+	margin-bottom:7px;
+	border:0;
+}
+
+.gradient-container td a {
+	color:#5f7d95!important;
+}
+
+.gradient-container td a:hover {
+	color:#000!important;
+}
+
+.gradient-container ul.headlines {
+	list-style-image:none;
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	overflow:auto;
+	font-size:.75em;
+}
+
+.gradient-container ul.headlines li {
+	background:url(https://img.offtrackbetting.com/images/backgrounds/bullet_gray.gif) 0 5px no-repeat;
+	padding-left:9px;
+	line-height:13px;
+	padding-bottom:3px;
+	color:#000!important;
+}
+
+.gradient-container-border {
+	background:none;
+	border:1px solid #999;
+}
+
+.head-hold {
+	width:550px;
+	height:90px;
+	position:absolute;
+	top:5px;
+	right:5px;
+	padding:0;
+	margin:0;
+	text-align:right;
+	vertical-align:middle;
+}
+
+.headback {
+	height:100px;
+	width:100%;
+	background:transparent url(https://img.offtrackbetting.com/images/top_header/bg.png) top repeat-x;
+	color:inherit;
+	border:1px solid #666;
+	margin-bottom:8px;
+}
+
+.headextra {
+	background:transparent;
+	height:25px;
+	padding:0;
+	color:#fff;
+	z-index:2;
+	margin:0;
+	_margin:0;
+}
+
+.identifier {
+	width:149px;
+	height:56px;
+	margin:0;
+	position:absolute;
+	top:-3px;
+	left:166px;
+	z-index:1;
+}
+
+.login {
+	margin:50px 0 20px;
+}
+
+.leftCol {
+	padding:0;
+	width:678px;
+	float:left;
+}
+
+.mainlogo {
+	width:400px;
+	float:left;
+	height:100px;
+	z-index:2;
+	position:absolute;
+	margin:0;
+	padding-bottom:2px;
+}
+
+.mainlogo a {
+	display:block;
+	width:auto;
+	height:100px;
+}
+
+.mainlogo h1 {
+	text-indent:-5000px;
+}
+
+.mod-container .mod-content {
+	border:0;
+	border-right:1px #DDD solid;
+	min-height:110px;
+	height:auto!important;
+	position:relative;
+	width:auto;
+	font-size:11px;
+	overflow:visible;
+	background:none;
+	margin:8px 0;
+	padding:0 8px 20px 0;
+}
+
+.mod-container .mod-content {
+	margin-right:2px;
+}
+
+.mod-jump-menu .mod-content {
+	background:transparent;
+	border:none;
+	margin-top:10px;
+}
+
+.mod-jump-menu .mod-content a,.mod-jump-menu .mod-content a:visited {
+	color:#444!important;
+}
+
+.mod-jump-menu .mod-content ul li {
+	font-size:10px;
+	float:left;
+	width:152px;
+	border-right:1px solid #DDD;
+	margin:0 3px 0 0;
+	padding:0 8px 0 0;
+}
+
+.mod-jump-menu .mod-content ul li ul {
+	margin-bottom:10px;
+	overflow:hidden;
+	padding:0;
+}
+
+.mod-jump-menu .mod-content ul li ul li a {
+	display:block;
+	padding:2px 0 3px 5px;
+}
+
+.mod-jump-menu .mod-content a:hover {
+	color:#225DB7!important;
+	text-decoration:underline;
+}
+
+.mod-jump-menu .mod-content ul li ul li h4 {
+	height:auto;
+	overflow:hidden;
+	font-size:11px;
+	line-height:16px;
+	font-family:Helvetica,Arial,sans-serif;
+	color:#444;
+	padding:2px 0 2px 5px;
+}
+
+.mod-jump-menu .mod-content ul,.mod-jump-menu .mod-content ul li ul li h4 a {
+	padding:0;
+}
+
+.mod-jump-menu .mod-content ul li ul li,.mod-jump-menu .mod-content ul li.last,.mod-content ul li.last {
+	border-right:none;
+	margin:0;
+	padding:0;
+}
+
+.mod-content ul,.mod-content ul li ul {
+	list-style:none;
+}
+
+.odd {
+	background-color:#efefe7;
+	color:inherit;
+}
+
+.odd2 {
+	background-color:#fff;
+	color:inherit;
+}
+
+.openAccount {
+	background-color:#efefe7;
+	border:1px #000 solid;
+	font:bold 16px Arial;
+	padding:2px;
+	text-align:center;
+	width:90%;
+	margin:15px auto;
+}
+
+.password,.username {
+	margin-top:3px;
+	width:135px;
+}
+
+.plain-header {
+	height:19px;
+	line-height:19px;
+	font-weight:700;
+	font-size:inherit;
+	font-family:Verdana,Helvetica,sans-serif;
+	margin:0;
+	padding:0;
+	color:#000;
+	border:none;
+	text-transform:none;
+	background:none;
+	display:inline;
+}
+
+.plain-link a:link,.plain-link a:visited,.plain-link a:hover {
+	text-decoration:none;
+	color:#fff;
+}
+
+.plain-text {
+	height:auto;
+	line-height:normal;
+	font:normal .75em Verdana,Arial,Helvetica,sans-serif;
+	margin:0;
+	padding:0;
+	color:#000;
+	border:none;
+	text-transform:none;
+	background:none;
+	display:inline;
+}
+
+.plain-text a:link,.plain-text a:visited,.plain-text a:hover {
+	text-decoration:none;
+	color:#000;
+}
+
+.promo-hold {
+	position:relative;
+	width:662px;
+	border:8px solid #f5f5f5;
+	padding:0;
+}
+
+.promo-list-c {
+	background-color:#35546E;
+	margin:5px auto;
+	width:654px;
+	overflow:auto;
+	clear:both;
+	padding:2px;
+	border:#000 1px solid;
+}
+
+.promo-list-c-sub {
+	background:#35546e;
+	background:-moz-linear-gradient(top,#35546e 0%,#0f3859 100%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#35546e),color-stop(100%,#0f3859));
+	background:-webkit-linear-gradient(top,#35546e 0%,#0f3859 100%);
+	background:-o-linear-gradient(top,#35546e 0%,#0f3859 100%);
+	background:-ms-linear-gradient(top,#35546e 0%,#0f3859 100%);
+	background:linear-gradient(to bottom,#35546e 0%,#0f3859 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#35546e',endColorstr='#0f3859',GradientType=0);
+	text-align:left;
+	overflow:auto;
+	padding:0;
+	border:#fff 1px solid;
+}
+
+.promo-list {
+	width:260px;
+	float:left;
+	padding:0 5px 0 40px;
+	font:normal 12px/14px Verdana,Arial,Helvetica,sans-serif;
+	list-style-type:none;
+	float:left;
+	color:#fff;
+	margin-left:10px;
+}
+
+.promo-list li {
+	background:url(https://img.offtrackbetting.com/images/star.png) no-repeat 0 3px;
+	padding:3px 0 3px 20px;
+}
+
+.bigJoinButton {
+	border:1px solid #72021c;
+	-webkit-border-radius:.3em;
+	-moz-border-radius:.3em;
+	border-radius:.3em;
+	padding:10px;
+	text-shadow:3px 3px 0 rgba(0,0,0,0.3);
+	font:bold 24px Arial,Helvetica,sans-serif;
+	text-align:center;
+	color:#FFF;
+	background-color:#870000;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#870000),to(#570000));
+	background-image:-webkit-linear-gradient(top,#870000,#570000);
+	background-image:-moz-linear-gradient(top,#870000,#570000);
+	background-image:-ms-linear-gradient(top,#870000,#570000);
+	background-image:-o-linear-gradient(top,#870000,#570000);
+	background-image:linear-gradient(to bottom,#870000,#570000);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#870000,endColorstr=#570000);
+}
+
+.bigJoinButton a,.bigJoinButton a:visited {
+	color:#FFF;
+}
+
+.bigJoinButton:hover {
+	border:1px solid #450111;
+	text-decoration:underline;
+}
+
+
+.resultsArchiveButton {
+	border:1px solid #72021c;
+	-webkit-border-radius:.5em;
+	-moz-border-radius:.5em;
+	border-radius:.5em;
+	padding:10px;
+	text-shadow:3px 3px 0 rgba(0,0,0,0.3);
+	font:bold 14px Arial,Helvetica,sans-serif;
+	text-align:center;
+	color:#FFF;
+	background-color:#870000;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#870000),to(#570000));
+	background-image:-webkit-linear-gradient(top,#870000,#570000);
+	background-image:-moz-linear-gradient(top,#870000,#570000);
+	background-image:-ms-linear-gradient(top,#870000,#570000);
+	background-image:-o-linear-gradient(top,#870000,#570000);
+	background-image:linear-gradient(to bottom,#870000,#570000);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#870000,endColorstr=#570000);
+}
+
+.resultsArchiveButton a,.resultsArchiveButton a:visited {
+	color:#FFF;
+}
+
+.resultsArchiveButton:hover {
+	border:1px solid #450111;
+	text-decoration:underline;
+}
+
+.rightCol {
+	padding:0;
+	margin:0;
+	width:300px;
+	float:right;
+}
+
+.section-sponsor {
+	position:relative;
+	float:right;
+	margin-top:20px;
+	margin-right:100px;
+	width:201px;
+	height:33px;
+	border:1px dashed #666;
+}
+
+.spacer {
+	height:15px;
+	overflow:hidden;
+}
+
+.spacerdouble {
+	height:30px;
+	overflow:hidden;
+}
+
+.spacerhalf {
+	height:7px;
+	overflow:hidden;
+}
+
+.spacernegative {
+	margin:-15px;
+	overflow:hidden;
+}
+
+.spacerquarter {
+	height:4px;
+	overflow:hidden;
+}
+
+.spaces-base {
+	height:65px;
+	width:120px;
+	float:left;
+	padding:5px 5px 0;
+	margin:0;
+}
+
+.spaces-center {
+	width:150px;
+	float:right;
+	color:#fff;
+	line-height:20px;
+	background:transparent url(https://img.offtrackbetting.com/images/back_trans.png) top left;
+	margin:10px 0 0;
+}
+
+.spaces-image {
+	float:right;
+	padding:5px 5px 0 0;
+	height:50px;
+}
+
+.span-1 {
+	width:149px;
+}
+
+.span-2 {
+	width:304px;
+}
+
+.span-3 {
+	width:459px;
+}
+
+.span-4 {
+	width:614px;
+}
+
+.span-5 {
+	width:825px;
+}
+
+.span-6,div.span-6 {
+	width:985px;
+	margin-right:0;
+}
+
+.text {
+	font-size:.75em;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+}
+
+.textbox {
+	font-size:.625em;
+	background-color:#fff;
+	border-left:1px #26254A inset;
+	border-top:1px #26254A inset;
+	color:#26254A;
+}
+
+.stripe > tbody > tr > td {
+	text-transform:capitalize;
+}
+
+.stripe > tbody > tr:hover,.dogstripe > tbody > tr:hover {
+	background:#d9ecff;
+	cursor:default;
+}
+
+div.span-6 {
+	float:left;
+	margin-right:6px;
+	position:relative;
+}
+
+div.last {
+	margin-right:0;
+}
+
+.tg {
+	border-collapse:collapse;
+	border-spacing:0;
+	border-color:#000;
+	width:100%;
+}
+
+.tg td {
+	font-family:Arial,sans-serif;
+	font-size:14px;
+	padding:10px 5px;
+	border-style:solid;
+	border-width:0;
+	overflow:hidden;
+	word-break:normal;
+	border-color:#999;
+	color:#444;
+	background-color:#F7FDFA;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	border-right-width:1px;
+}
+
+.tg th {
+	font-family:Arial,sans-serif;
+	font-size:14px;
+	font-weight:400;
+	padding:10px 5px;
+	border-style:solid;
+	border-width:0;
+	overflow:hidden;
+	word-break:normal;
+	border-color:#999;
+	color:#fff;
+	background-color:#26ADE4;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	border-right-width:1px;
+	background:#35546e;
+	background:-moz-linear-gradient(top,#35546e 0%,#0f3859 100%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#35546e),color-stop(100%,#0f3859));
+	background:-webkit-linear-gradient(top,#35546e 0%,#0f3859 100%);
+	background:-o-linear-gradient(top,#35546e 0%,#0f3859 100%);
+	background:-ms-linear-gradient(top,#35546e 0%,#0f3859 100%);
+	background:linear-gradient(to bottom,#35546e 0%,#0f3859 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#35546e',endColorstr='#0f3859',GradientType=0);
+}
+
+.tg .tg-ddzj {
+	background-color:#efefe7;
+	font-weight:700;
+	font-size:18px;
+	font-family:"Lucida Sans Unicode","Lucida Grande",sans-serif!important;
+	border-left-width:1px;
+}
+
+.tg .tg-m5ml {
+	font-family:"Lucida Sans Unicode","Lucida Grande",sans-serif!important;
+	background-color:#fff;
+	text-align:center;
+}
+
+.tg .tg-sifj {
+	background-color:#efefe7;
+	font-weight:700;
+	font-size:18px;
+	font-family:"Lucida Sans Unicode","Lucida Grande",sans-serif!important;
+	border-left-width:1px;
+}
+
+.tg .tg-leyr {
+	background-color:#efefe7;
+	font-weight:700;
+	font-family:"Lucida Sans Unicode","Lucida Grande",sans-serif!important;
+	text-align:center;
+}
+
+.tg .tg-t1z5 {
+	font-weight:700;
+	font-size:18px;
+	font-family:"Lucida Sans Unicode","Lucida Grande",sans-serif!important;
+	border-left-width:1px;
+}
+
+.tg .tg-70g3 {
+	font-weight:700;
+	font-size:18px;
+	font-family:"Lucida Sans Unicode","Lucida Grande",sans-serif!important;
+	text-align:center;
+}
+
+.tg .tg-3r6a {
+	background-color:#efefe7;
+	font-family:"Lucida Sans Unicode","Lucida Grande",sans-serif!important;
+	text-align:center;
+}
+
+.tg .tg-mzqc {
+	font-weight:700;
+	font-size:18px;
+	font-family:"Lucida Sans Unicode","Lucida Grande",sans-serif!important;
+	background-color:#fff;
+	border-left-width:1px;
+}
+
+.mod-follow {
+	width:300px;
+	border:1px solid #e9e9e9;
+}
+
+.mod-follow .sprite {
+	background:url(https://img.offtrackbetting.com/images/rail-sprite.png) no-repeat 0 0;
+}
+
+.mod-follow .platform {
+	position:relative;
+	zoom:1;
+	margin:0 15px;
+	padding:0;
+}
+
+.mod-follow .platform:before,.mod-follow .platform:after {
+	content:"";
+	display:table;
+}
+
+.mod-follow .platform:after {
+	clear:both;
+}
+
+.mod-follow .platform>li {
+	float:left;
+	margin:0 auto;
+	cursor:pointer;
+	position:relative;
+	list-style:none;
+	padding:0 20px 0 0;
+}
+
+.mod-follow .platform>li:last-child {
+	padding:0;
+}
+
+.mod-follow .platform>li a {
+	display:block;
+	width:35px;
+	height:31px;
+	text-indent:-99px;
+	overflow:hidden;
+}
+
+.mod-follow .platform .email {
+	background-position:0 0;
+}
+
+.mod-follow .platform .email:hover {
+	background-position:0 -39px;
+}
+
+.mod-follow .platform .fb {
+	background-position:0 -78px;
+}
+
+.mod-follow .platform .fb:hover {
+	background-position:0 -117px;
+}
+
+.mod-follow .platform .twitter {
+	background-position:0 -156px;
+}
+
+.mod-follow .platform .twitter:hover {
+	background-position:0 -195px;
+}
+
+.mod-follow .platform .gplus {
+	background-position:0 -234px;
+}
+
+.mod-follow .platform .gplus:hover {
+	background-position:0 -273px;
+}
+
+.mod-follow .platform .rss {
+	background-position:0 -312px;
+}
+
+.mod-follow .platform .rss:hover {
+	background-position:0 -352px;
+}
+
+.mod-follow .platform .mobile {
+	background-position:0 -391px;
+}
+
+.mod-follow .platform .mobile:hover {
+	background-position:0 -430px;
+}
+
+.carryoverList table {
+	width:100%;
+}
+
+.carryoverList th {
+	font-weight:700;
+	text-align:left!important;
+	color:#000;
+}
+
+.carryoverList td {
+	width:auto;
+	text-align:left!important;
+}
+
+.carryoverAmount span {
+	color:GREEN!important;
+}
+
+.carryoverList td > span,.carryoverList td > span > span {
+	color:#000!important;
+}
+
+h1.otbHeader,.otbHeader {
+	height:19px;
+	line-height:19px;
+	font-weight:700;
+	font-size:.725em;
+	font-family:Verdana,Helvetica,sans-serif;
+	margin:0;
+	padding:0;
+	color:#000;
+	border:none;
+	text-transform:none;
+	background:none;
+	display:inline;
+}
+
+.otbParentContainer,.newsParentContainer {
+	height:100%;
+	margin:0;
+}
+
+.otbParentContainer p,.newsParentContainer p {
+	margin:0 0 5px;
+}
+
+.newsParentContainer p {
+	font-size:1em;
+}
+
+.signUpOTBContainer {
+	float:left;
+	clear:both;
+}
+
+.emptyOTB {
+	height:20px;
+}
+
+.gradedStakes,.gradedStakes table {
+	width:100%;
+}
+
+.gradedStakes th {
+	font-weight:700;
+	text-align:left!important;
+	color:#000;
+}
+
+.gradedStakes td {
+	width:auto;
+	text-align:left!important;
+}
+
+.gradedStakes td > span {
+	color:PURPLE!important;
+}
+
+.gradedStakes td > h3,.gradedStakes td > h3 > a {
+	font-weight:400;
+	text-align:left!important;
+	color:#000;
+	background:none;
+	text-transform:none;
+	border:none;
+	height:inherit;
+	line-height:normal;
+	font-size:inherit;
+	font-family:Verdana,Helvetica,sans-serif;
+	margin:0;
+	padding:0;
+	color:inherit;
+}
+
+.gradedStakes_results,.gradedStakes_results table {
+	width:100%;
+}
+
+.gradedStakes_results th {
+	padding:0 2px 0 3px;
+	font-weight:700;
+	text-align:left!important;
+	color:#FFF;
+	background-color:#000;
+	height:28px;
+	vertical-align:bottom;
+}
+
+.gradedStakes_results td {
+	width:auto;
+	padding:0 2px 0 3px;
+	text-align:left!important;
+}
+
+.gradedStakes_results td > span {
+	color:PURPLE!important;
+}
+
+.gradedStakes_results > tbody > tr:hover {
+	background:#d9ecff;
+	cursor:default;
+}
+
+div#navcont {
+	width:984px;
+	position:relative;
+	clear:both;
+	background:url(https://img.offtrackbetting.com/images/top_nav/bg.png) repeat-x top left;
+	height:32px;
+	padding-bottom:1px;
+	z-index:400;
+	border:1px solid #666;
+}
+
+ul.menu {
+	padding:0;
+	margin:0 auto;
+	list-style:none;
+	position:relative;
+	z-index:500;
+	float:left;
+	width:10.625%;
+	text-align:center;
+	background:url(https://img.offtrackbetting.com/images/top_nav/spacer.png) no-repeat right top;
+}
+
+ul.handicapping {
+	width:15%;
+}
+
+ul.posRight {
+	background:none;
+}
+
+ul.menu a {
+	font:bold 12px arial,helvetica,sans-serif;
+	color:#031D3B;
+	text-decoration:none;
+	display:block;
+}
+
+ul.menu a:hover {
+	color:#FFF;
+	text-decoration:none;
+	background-color:#031D3B;
+}
+
+ul.menu li:hover > a {
+	color:#FFF;
+	background-color:#031D3B;
+}
+
+ul.menu > li > a {
+	display:block;
+	height:32px;
+	line-height:32px;
+	padding:0;
+	text-align:center;
+}
+
+ul.drop {
+	padding:0;
+	margin:0;
+	list-style:none;
+	position:absolute;
+	left:-9999px;
+	top:32px;
+	width:170px;
+}
+
+ul.drop li {
+	background-image:none;
+	border:1px solid #9db2c7;
+	text-align:left;
+}
+
+ul.drop li a {
+	display:block;
+	padding:2px 10px;
+	height:auto;
+	font:bold 11px/16px Arial,Helvetica,sans-serif;
+	background:#e4e4e4;
+}
+
+ul.drop li a:hover {
+	background-color:#031D3B;
+	color:#FFF;
+}
+
+ul.menu li.liTop:hover {
+	position:relative;
+	height:32px;
+}
+
+ul.menu li.liTop:hover ul {
+	left:0;
+}
+
+ul.menu table {
+	border-collapse:collapse;
+	width:0;
+	height:0;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+ul.menu a ul li {
+	float:left;
+	width:170px;
+}
+
+* html ul.menu li.liTop a:hover {
+	direction:ltr;
+	height:32px;
+}
+
+ul.menu a:hover ul {
+	left:0;
+}
+
+ul.menu a:hover ul li a {
+	width:150px;
+}
+
+ul.menu a:hover ul li a:hover {
+	height:auto;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

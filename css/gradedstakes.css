@@ -1,0 +1,71 @@
+/* CSS File */
+
+
+.gradedStakes, .gradedStakes table {
+	width: 100%;
+	}
+
+.gradedStakes th {
+	font-weight:bold;
+	text-align:left!important;
+	color:#000;
+	}
+
+.gradedStakes td {
+	width:auto;
+	text-align:left!important;
+	}
+	
+/*
+.gradedStakes td > span {
+	color:PURPLE!important;
+	}
+*/
+	
+.gradedStakes td > h3, .gradedStakes td > h3 > a {
+	font-weight:normal;
+	text-align:left!important;
+	color:#000;
+	background: none;
+	text-transform: none;
+	border: none;
+	height:inherit;
+	line-height:normal;
+	font-size:inherit; 
+	font-family: Verdana, Helvetica, sans-serif;
+	margin:0px;
+	padding: 0px;
+	color: inherit;
+	}
+	
+	
+.gradedStakes_results, .gradedStakes_results table {
+	width: 100%;
+	}
+
+.gradedStakes_results th {
+	padding: 0px 2px 0px 3px;
+	font-weight:bold;
+	text-align:left!important;
+	color:#FFFFFF;
+	background-color: black;
+	height: 28px;
+	vertical-align: bottom;
+	}
+
+.gradedStakes_results td {
+	width:auto;
+	padding: 0px 2px 0px 3px;
+	text-align:left!important;
+	}
+	
+/*
+.gradedStakes_results td > span {
+	color:PURPLE;
+	}	
+*/
+	
+.gradedStakes_results > tbody > tr:hover {
+	background: #d9ecff;
+	cursor:default;
+	}

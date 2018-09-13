@@ -1,0 +1,36 @@
+/* CSS Document */
+
+<!-- 
+body {font: 9pt georgia,serif;}
+h2,
+div.storybody > span > b {
+	font-size: 14pt; 
+	display: inline;
+	} 
+
+a:link:after, a:visited:after { content:" [" attr(href) "] "; }
+
+#gradedStakes_results > table {
+	margin: 10px 0px;
+	}
+	
+tr {
+ color: black;
+ }	
+
+#footer, 
+img, 
+div.allhead, 
+#shareBar, 
+div.subhead, 
+div.storybody > p, 
+div.storybody > span > p, 
+div.storybody > hr, 
+div.rightCol, 
+h3,
+h1, 
+div.freepicksDisclaimer,
+.gradient-container > span {
+	display: none;
+	}
+-->

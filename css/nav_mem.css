@@ -1,0 +1,28 @@
+div#navcont { width:987px; position:relative; clear: both; background:url(https://img.offtrackbetting.com/images/top_nav/bg.png) repeat-x top left; height:32px; padding-bottom:1px; z-index:400; border: 1px solid #666666;}
+ 
+ul.menu {padding:0; margin:0px auto; list-style:none; position:relative; z-index:500; float:left; width: 16.667%; text-align: center; background: url(https://img.offtrackbetting.com/images/top_nav/spacer.png) no-repeat right top;}
+
+ul.posRight {background: none;}
+
+ul.menu a {font:bold 12px arial, helvetica, sans-serif; color:#031D3B; text-decoration:none; display: block;}
+ul.menu a:hover {color:#FFFFFF; text-decoration:none; background-color: #031D3B;}
+
+ul.menu li:hover > a {color:#FFFFFF; background-color: #031D3B;}
+
+ul.menu > li > a {display:block; height:32px; line-height:32px; padding:0px; text-align: center;}
+
+ul.drop {padding:0; margin:0; list-style:none; position:absolute; left:-9999px; top:32px; width:170px;}
+ul.drop li {background-image: none;	border: 1px solid #9db2c7; text-align: left;}
+ul.drop li a {display:block; padding:2px 10px; height:auto; font:bold 11px/16px Arial, Helvetica, sans-serif; background:#e4e4e4;}
+ul.drop li a:hover {background-color: #031D3B; color:#FFFFFF;}
+
+ul.menu li.liTop:hover {position:relative; height:32px;}
+ul.menu li.liTop:hover ul {left:0;}
+
+/* for IE6 */
+ul.menu table {border-collapse:collapse; width:0; height:0; position:absolute; left:0; top:0;}
+ul.menu a ul li {float:left; width:170px;}
+* html ul.menu li.liTop a:hover {direction:ltr; height:32px;}
+ul.menu a:hover ul {left:0;}
+ul.menu a:hover ul li a {width:150px;}
+ul.menu a:hover ul li a:hover {height:auto;}

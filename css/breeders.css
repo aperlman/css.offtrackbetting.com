@@ -1,0 +1,136 @@
+#news_article .date {
+    color: #7A7A7A;
+    font: 11px Verdana,Arial,Helvetica,sans-serif;
+}
+
+#news_article .storybody a > img {
+	float:left;
+	padding: 10px 10px 10px 0px;
+	}
+
+#news_article h1 {
+    font: 700 26px/30px helvetica,arial,sans-serif;
+    margin: 0;
+    padding: 5px 0px;
+    position: relative;
+    width: 100%;
+    background: none;
+    border: none;
+    color: black;
+    text-transform: none;
+    display: inline;
+}
+
+#news_article .storybody > h3, #news_article .storybody > h2 {
+    font: 700 18px/28px helvetica,arial,sans-serif;
+    margin: 10px 0 10px 0;
+    padding: 5px 0px;
+    position: relative;
+    width: 100%;
+    background: none;
+    border: none;
+    color: black;
+    text-transform: none;
+    display: inline;
+}
+
+
+#news_article .headline {
+    border-bottom: 1px solid #C2C2C2;
+    padding: 8px 0px 16px 0px;
+    vertical-align: baseline;
+}
+
+#news_article .subhead {
+    margin: 5px 0 10px;
+    overflow: hidden;
+}
+
+#news_article .subhead cite.source {
+    display: block;
+    font-size: 10px;
+    line-height: 12px;
+    overflow: hidden;
+    margin: 2px 0 0;
+    padding: 0px;
+    font: 11px/16px Verdana,Arial,Helvetica,sans-serif;
+    vertical-align: baseline;
+    color: #000000;
+}
+
+#news_article .storybody {
+    font: 1em/1.2em Verdana,Arial,Helvetica,sans-serif;
+}
+
+#news_article blockquote {
+ 	border : 1px solid #000000;
+ 	width: 200px;
+ 	float: right;
+ 	margin: 5px 0px 5px 8px;
+ 	padding: 10px;
+ 	background-color: #efefe7;
+ 	/* quotes: "\201C" "\201D"; */
+ }
+ 
+#news_article .storybody blockquote > h3, #news_article .storybody blockquote > h2 {
+	font: 100 14px/19px; Verdana, Helvetica, sans-serif;
+	margin:0px;
+	padding: 0px;
+	color: black;
+	border: none;
+	text-transform: none;
+	background: none; 
+	display: inline;
+ }
+ 
+
+
+/* 
+#news_article blockquote:before { 
+	content: open-quote; 
+	font-weight: bold;
+	}
+#news_article blockquote:after { 
+	content: close-quote; 
+	font-weight: bold; 
+	}
+	
+*/
+
+#shareBar {
+	padding: 8px 0px 5px 0px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #C2C2C2;
+	vertical-align: baseline;
+		}
+
+#columns {
+        margin:15px auto;
+        text-align:left;
+        padding:5px;
+        border:1px solid #000;
+        background-color:#eee;
+       }
+
+      
+                       		
+#columns ul {
+	 	display: block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        list-style-type: none;
+
+}
+ 
+#columns li {
+  	font: 1em/1em Verdana,Arial,Helvetica,sans-serif;
+}
+ 
+#columns li.col1 {margin-left: .5em;}
+ 
+#columns li.col2 {margin-left: 4em;}
+ 
+#columns li.col3 {margin-left: 16em;}
+ 
+#columns li.coltopper {margin-top: -15em;}		

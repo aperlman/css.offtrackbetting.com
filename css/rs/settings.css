@@ -1,0 +1,208 @@
+/*-----------------------------------------------------------------------------
+Revolution Slider
+version:   	1.4.5
+email:     	info@themepunch.com
+website:   	http://www.themepunch.com
+-----------------------------------------------------------------------------*/
+
+.tp-caption {
+	z-index:1;
+	white-space:nowrap;
+}
+
+.tp-simpleresponsive .caption,.tp-simpleresponsive .tp-caption {
+	position:absolute;
+	visibility:hidden;
+	-webkit-font-smoothing:antialiased!important;
+}
+
+.tpclear {
+	clear:both;
+}
+
+.tp-bullets {
+	z-index:1000;
+	position:absolute;
+	-ms-filter:alpha(Opacity=100);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	-webkit-transition:opacity .2s ease-out;
+	-moz-transition:opacity .2s ease-out;
+	-o-transition:opacity .2s ease-out;
+	-ms-transition:opacity .2s ease-out;
+	-webkit-transform:translateZ(5px);
+}
+
+.tp-bullets.hidebullets {
+	-ms-filter:alpha(Opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity:0;
+	opacity:0;
+}
+
+.tp-bullets.simplebullets.round .bullet {
+	cursor:pointer;
+	position:relative;
+	background:url('https://img.offtrackbetting.com/images/rs_assets/bullet.png') no-Repeat top left;
+	width:20px;
+	height:20px;
+	margin-right:0;
+	float:left;
+	margin-top:0;
+	margin-left:3px;
+}
+
+.tp-bullets.simplebullets.round .bullet.last {
+	margin-right:3px;
+}
+
+.tp-bullets.simplebullets .bullet.selected,.tp-bullets.simplebullets .bullet:hover {
+	background-position:top left;
+}
+
+.tp-bullets.simplebullets.navbar .bullet.selected,.tp-bullets.simplebullets.navbar .bullet:hover,.tp-bullets.simplebullets.round .bullet.selected,.tp-bullets.simplebullets.round .bullet:hover {
+	background-position:bottom left;
+}
+
+.tparrows {
+	-ms-filter:alpha(Opacity=100);
+	-moz-opacity:1;
+	-khtml-opacity:1;
+	opacity:1;
+	-webkit-transition:opacity .2s ease-out;
+	-moz-transition:opacity .2s ease-out;
+	-o-transition:opacity .2s ease-out;
+	-ms-transition:opacity .2s ease-out;
+	-webkit-transform:translateZ(5000px);
+	-webkit-transform-style:flat;
+	-webkit-backface-visibility:hidden;
+	z-index:600;
+	position:relative;
+}
+
+.tparrows.hidearrows {
+	-ms-filter:alpha(Opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity:0;
+	opacity:0;
+}
+
+.tp-leftarrow {
+	z-index:100;
+	cursor:pointer;
+	position:relative;
+	background:url('https://img.offtrackbetting.com/images/rs_assets/large_left.png') no-Repeat top left;
+	width:40px;
+	height:40px;
+}
+
+.tp-rightarrow {
+	z-index:100;
+	cursor:pointer;
+	position:relative;
+	background:url('https://img.offtrackbetting.com/images/rs_assets/large_right.png') no-Repeat top left;
+	width:40px;
+	height:40px;
+}
+
+.tp-leftarrow.default {
+	z-index:100;
+	cursor:pointer;
+	position:relative;
+	background:url('https://img.offtrackbetting.com/images/rs_assets/large_left.png') no-Repeat 0 0;
+	width:40px;
+	height:40px;
+}
+
+.tp-rightarrow.default {
+	z-index:100;
+	cursor:pointer;
+	position:relative;
+	background:url('https://img.offtrackbetting.com/images/rs_assets/large_right.png') no-Repeat 0 0;
+	width:40px;
+	height:40px;
+}
+
+.tp-leftarrow:hover,.tp-rightarrow:hover {
+	background-position:bottom left;
+}
+
+.tp-bannertimer {
+	width:100%;
+	height:10px;
+	background:url('https://img.offtrackbetting.com/images/rs_assets/timer.png');
+	position:absolute;
+	z-index:200;
+	top:0;
+}
+
+.tp-simpleresponsive a {
+	text-decoration:none;
+}
+
+.tp-simpleresponsive ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.tp-simpleresponsive >ul >li {
+	list-stye:none;
+	position:absolute;
+	visibility:hidden;
+}
+
+.tp-loader {
+	top:50%;
+	left:50%;
+	z-index:10000;
+	position:absolute;
+}
+
+.tp-loader.spinner0 {
+	width:40px;
+	height:40px;
+	background:url('https://img.offtrackbetting.com/images/rs_assets/loader.gif') no-repeat center center;
+	background-color:#fff;
+	box-shadow:0 0 20px 0 rgba(0,0,0,.15);
+	-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.15);
+	margin-top:-20px;
+	margin-left:-20px;
+	-webkit-animation:tp-rotateplane 1.2s infinite ease-in-out;
+	animation:tp-rotateplane 1.2s infinite ease-in-out;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+@-webkit-keyframes tp-rotateplane {
+	0% {
+		-webkit-transform:perspective(120px);
+	}
+	
+	50% {
+		-webkit-transform:perspective(120px) rotateY(180deg);
+	}
+	
+	100% {
+		-webkit-transform:perspective(120px) rotateY(180deg) rotateX(180deg);
+	}
+}
+
+@keyframes tp-rotateplane {
+	0% {
+		transform:perspective(120px) rotateX(0deg) rotateY(0deg);
+		-webkit-transform:perspective(120px) rotateX(0deg) rotateY(0deg);
+	}
+	
+	50% {
+		transform:perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+		-webkit-transform:perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+	}
+	
+	100% {
+		transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+		-webkit-transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+	}
+}

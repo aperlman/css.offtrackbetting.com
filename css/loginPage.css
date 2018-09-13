@@ -1,0 +1,43 @@
+#main {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('https://img.offtrackbetting.com/images/secretariat.jpg');
+    background-size: cover;
+}
+
+#main.header-offset {
+    margin-top: 0px;
+}
+
+#login-wrapper {
+    background: rgba(255, 255, 255, 0.3);
+    min-height: 450px;
+    height: 100vh;
+    
+}
+
+#login-wrapper #login-wrapper-inner {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+.login-col {
+    margin-bottom: 50px;
+    padding:20px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#top.fixed {
+    position: relative;
+}
+
+@media (min-width: 992px) and (min-height: 550px) {  
+    #login-wrapper #login-wrapper-inner {
+        margin-top: -235px;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        left: 0px;
+    }
+}
+

@@ -1,0 +1,40 @@
+/* CSS Document */
+
+<!-- 
+
+	
+#footer, 
+img, 
+div.allhead, 
+#shareBar, 
+div.subhead, 
+div.storybody > p, 
+div.storybody > span > p, 
+div.storybody > hr, 
+div.rightCol, #right-col, 
+h3,
+h3 > a,
+h1, 
+div.freepicksDisclaimer,
+#header,
+div.footer,
+div.copyright,
+#nav-mobile,
+.jcarousel-wrapper,
+.scroll-top-wrapper,
+.openAccount {
+	display: none;
+	}
+	
+body {font: 8pt georgia,serif;}
+h2,
+.tag-box > h3,
+div.storybody > span > b {
+	font-size: 14pt; 
+	display: inline;
+	} 
+
+#gradedStakes_results > table {
+	margin: 10px 0px;
+	}
+-->

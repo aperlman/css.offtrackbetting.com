@@ -1,0 +1,89 @@
+/* #left-nav-btn { display:none !important; } */
+
+#top .navbar-header {
+    display: block;
+    margin: 5px 5px 0px !important;
+    padding: 0px;
+    overflow: hidden;
+    line-height: 40px;
+    vertical-align: middle;
+    float: right;
+}
+
+.modal-body ul li {
+    margin-bottom: 0px;
+    list-style-position: outside;
+}
+
+#top.fixed {
+    position: relative;
+    }
+    
+#main {
+    padding-top: 2px !important;
+    max-width: 1115px;
+    margin: 0px auto;
+}
+
+body { background:#f5f5f5 url('https://img.offtrackbetting.com/images/backgrounds/bg_gradient3.jpg') 50% 55px repeat-x; }
+
+.wrapper {
+	background:transparent url('https://img.offtrackbetting.com/images/backgrounds/background3.jpg') 50% 55px no-repeat;
+}
+
+#memberBanners {
+    padding: 10px 0px;
+}
+
+#top .logo-sm-mem {
+      display: none;
+    }
+
+.login-header {
+      float: right !important;
+  }
+  
+.ticketBtn {
+    margin: 10px 0px 0px 10px !important;
+    display: block;
+    height: 36px;
+    padding: 8px 8px;
+    font-size: 16px;
+    float: left;
+  }
+  .fafabartog {
+    float: right;
+    margin: 10px 0px 0px 10px !important;
+  }
+  
+  #header {
+    height: 55px;
+  }
+  
+  #ticket {
+    min-width: 100%;
+    width:100px;
+  }
+
+@media screen and (min-width: 0px) and (max-width: 621px) {
+    #memberBanners {
+       display: none;
+    } 
+    
+    #top .logo-lrg-mem {
+      display: none;
+    }
+    
+    #top .logo img {
+      margin: 10px 0 0;
+    }
+    
+    #top .logo-sm-mem {
+      display: block;
+    }
+    #top .container {
+      height: 55px;
+      margin-bottom: 0;
+    }
+    
+}

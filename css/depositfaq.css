@@ -1,0 +1,163 @@
+/* ==================================================================
+ Deposit Pages Base
+===================================================================*/
+#otbd {
+	width: 100%;
+	margin-left: 4px;
+}
+#otbd-main {
+	height: 100%;
+}
+#otbd-main a {
+	color: #333333;
+}
+
+/* ==================================================================
+ Deposit Page Menu
+===================================================================*/
+#otbd-menu {
+	font-size: 18px;
+	line-height: 1;
+	position: relative;
+	top: 10px;
+	left: 9px;
+	width: 100%;
+	overflow: hidden;
+	padding: 5px 0 0;
+	background: url('https://img.offtrackbetting.com/images/menu-buttons.png') no-repeat left top;
+	color: #fff;
+}
+#otbd-menu ol {
+	margin: 0;
+	padding: 0;
+}
+#otbd-menu li {
+	display: inline;
+	float: left;
+	margin: 0 0 0 2px;
+	padding: 0;
+	list-style: none;
+}
+#otbd-menu li.menu-home {margin-left: 0}
+#otbd-menu a {
+	line-height: 1;
+	float: left;
+	padding: 3px 0 7px 0;
+	color: #fff;
+	text-decoration: underline;
+	text-align: center;
+}
+#otbd-menu a.active {
+	color: #575757;
+}
+#otbd-menu a:hover,
+#otbd-menu a.active:hover {
+
+}
+#otbd-menu .menu-deposit a {width: 185px}
+#otbd-menu .menu-faqs a {width: 185px}
+
+.detailsLink {
+        font-size: 15px;
+	font-weight:bold;
+        position: relative;
+        top: 92px;
+        left: 72px;
+        color: #fff;            
+        z-index: 10;
+}
+
+/* ==================================================================
+ Deposit Pages FAQs Content
+===================================================================*/
+#otbd-main #faq-content {
+	font-size: 12px;
+	line-height: normal;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	padding: 5px 0px;
+	color: #575757;
+}
+#otbd-main #faqs {
+	padding-right: 5px;
+}
+#otbd-main #faqs h2 {
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: normal;
+	margin: 5px 0 5px;
+	color: #666666;
+	text-transform: none;
+	border: none;
+	height: auto;
+	background: none;
+	text-transform: none;
+	
+}
+#otbd-main #faqs h3 {
+	font-size: 13px;
+	font-weight: normal;
+	line-height: normal;
+	padding: 0px 0 0px;
+	margin-bottom:0px;
+	color: #333333;
+	background: none;
+	text-transform: none;
+	border: none;
+}
+#otbd-main #faqs .treemenu a h3 {
+	text-decoration: underline;
+}
+#otbd-main #faqs .treemenu a:hover h3 {
+	text-decoration: none;
+}
+#otbd-main #faqs p {
+	line-height: normal;
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+#otbd-main #faqs h2 a.anchors {
+	display: block;
+	font-weight: normal;
+	margin: 16px 0 16px;
+	text-decoration: none;
+	color: #333333;
+}
+#otbd-main #faqs .treemenu {
+	list-style: none;
+	padding-left: 20px;
+}
+#otbd-main #faqs .treemenu ul {
+	list-style: none;
+	padding: 10px 0px 10px;
+	margin: 0px;
+}
+#otbd-main #faqs .treemenu li {
+	display: inline;
+	line-height: 1.2em;
+}
+#otbd-main #faqs .treemenu li ul a {
+	text-decoration: underline;
+}
+#otbd-main #faqs .treemenu li ul a:hover {
+	text-decoration: none;
+}
+#otbd-main #faqs ol.a-ordered {
+	padding: 6px 10px;
+	font-size:12px;
+	
+}
+#otbd-main #faqs ol.a-ordered li {
+	display: list-item;
+	line-height: 1.3em;
+	padding: 0px 0;
+	list-style:decimal;
+	margin-left: 15px;
+}
+#otbd-main #faqs a.treeopen {
+	text-decoration: underline;
+}
+#otbd-main #faqs a.treeclosed {
+	text-decoration: none;
+}

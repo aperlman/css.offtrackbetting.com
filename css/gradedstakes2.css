@@ -1,0 +1,46 @@
+
+/* CSS File */
+
+
+.gradedStakes_results, .gradedStakes_results table {
+	width: 100%;
+	max-width: 100%;
+	overflow-x: scroll;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-color: none;
+	}
+
+.gradedStakes_results th {
+	padding: 6px 4px 4px;
+	font-weight:bold;
+	color:#eee;
+	background-color: #333;
+	vertical-align: bottom;
+	}
+
+.gradedStakes_results td {
+	padding: 5px;
+	white-space: nowrap;
+	width: auto;
+	max-width: 260px;
+	min-width: 0;
+	overflow: hidden;
+	}
+
+
+/* This wasnt being applied - fixed */
+.gradedStakes_results tbody > tr:hover {
+	background: #d9ecff;
+	outline: #73BBFF 1px solid;
+	cursor:default;
+	}
+
+
+/* Or any color that has similar contrast */
+.even {
+background-color: #f6f6e5;
+}
+.odd {
+background-color: #E4E4D2;
+}

@@ -1,0 +1,102 @@
+body{ 
+	align: 0 auto;
+	padding: 0; 
+	margin: 0; 
+	background: #951312 url(https://img.offtrackbetting.com/images/backgrounds/site_bg.gif) center repeat-y;
+	font-size: 12pt; 
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+p {
+	margin: 0 0 1.1em 0; /* clockwise setting: top right bottom left */
+	font-family: Arial, Helvetica, sans-serif;
+	}	
+
+form {margin: 0;} /*take away space at the bottom of the page in firefox*/
+
+
+#container{ /* holds the whole thing in - before header - after footer*/	
+	padding: 0;
+	margin:0;
+	width: 985px;
+	position: relative;
+	margin:0px auto;
+	text-align:left;
+	background-color:#fff;
+	/* border-left: 1px solid #fff;
+	border-right: 1px solid #fff; */ /* these made the width 987px in FF */
+	}
+
+#content{ /* main area between header and footer*/
+	padding: 5px;
+	padding-top:7px;
+	margin: 0;
+	left: 1px;
+	text-align:left; /*to uncenter the text*/
+	float:left;
+	width:975px;}
+
+/* --the following make up the components of the header and menu - not links -- */
+
+#head{ /*the base header - this would be the same on every page of the site - in the include for the header*/
+   padding: 0px; 
+   clear:both;
+   height: 64px;
+   position: relative;
+   width: 100%; 
+   z-index:1;}
+  
+.allhead{ /*holds in the login-search, main header, navigation and sub nav*/
+padding: 0px;
+margin: 0px;
+width: 100%;
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 11px ;}
+
+
+/* holding the covers logo - left side of header*/
+.mainlogo {
+width: 333px;
+float: left;
+background: url(https://img.offtrackbetting.com/images/covers/header/images/covers_logo.gif) no-repeat;
+height: 62px;
+z-index: 2;
+position: absolute;
+margin: 20px 0 0 10px;
+
+
+}
+
+
+.mainlogo /* holding the coversexperts logo - left side of header*/{
+background: url(https://img.offtrackbetting.com/images/images/contests/header/images/covers_logo_wagerline.gif) no-repeat 0 0;
+padding-bottom: 2px;
+}
+
+.mainlogo a{display:block;width:auto;height:62px;} /* for the link on logo*/
+
+.identifier{ /*the sport identifier in the header*/
+margin-top: 39px;
+margin-left: 110px;
+width: 425px;
+height: 30px;
+background: url(https://img.offtrackbetting.com/images/contests/header/identifier/images/contests.gif) bottom right no-repeat;
+
+}
+
+
+.headback { /* the image behind the header*/
+background: #881212 url(https://img.offtrackbetting.com/images/contests/header/back_contests.gif); }
+
+.covers-nav, * html .covers-nav {
+background:none; background:url(https://img.offtrackbetting.com/images/shared/header/pointers/images/covers-off.gif) no-repeat; 
+height:17px;}
+
+.contests-nav  { 
+background:url(https://img.offtrackbetting.com/images/shared/header/pointers/images/contests.png) no-repeat; 
+height:23px; }
+
+* html .contests-nav { 
+background:url(https://img.offtrackbetting.com/images/shared/header/pointers/images/contests.gif) no-repeat; }
+
+

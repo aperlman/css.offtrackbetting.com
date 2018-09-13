@@ -1,0 +1,397 @@
+/**********
+ * COMMON *
+ **********/
+a:link { 
+	color: #5f7d95; 
+	text-decoration: none;
+	} 
+
+a:visited { 
+	text-decoration: none; 
+	color: #5f7d95;
+	} 
+
+a:hover { 
+	color: #000000;
+	} 
+
+a:active { 
+	color: #669933;
+	}
+	
+body {
+	font-family:arial,sans-serif;
+	font-size:16px;
+	text-align:left;
+	overflow-x: hidden;
+	margin: 0px;
+}
+
+a.lowkey:link a.lowkey:visited { 
+	color: inherit; 
+	text-decoration: none;
+	} 
+
+a.lowkey:hover, a.lowkey:active { 
+	color: inherit;
+	text-decoration: underline;
+	}
+
+.plain-header {
+	height: 19px;
+	line-height: 19px;
+	font-weight: bold; 
+	font-size: inherit; 
+	font-family: Verdana, Helvetica, sans-serif ;
+	margin:0px;
+	padding: 0px;
+	color: black;
+	border: none;
+	text-transform: none;
+	background: none; 
+	display: inline;
+	}
+
+.plain-link a:link, 
+.plain-link a:visited, 
+.plain-link a:hover {
+	text-decoration:none;
+	color:white;
+	}
+
+.plain-text {
+	height: auto;
+	line-height: normal;
+	font: normal 0.75em Verdana, Arial, Helvetica, sans-serif;
+	margin:0px;
+	padding: 0px;
+	color: black;
+	border: none;
+	text-transform: none;
+	background: none; 
+	display: inline;
+	}
+
+.plain-text a:link, 
+.plain-text a:visited, 
+.plain-text a:hover {
+	text-decoration:none;
+	color:black;
+	}
+		
+.l {
+	padding:5px;
+}
+
+.t {
+	table-layout:fixed;
+	padding:5px;
+}
+
+.t .t1 {
+	padding-right:4px;
+}
+
+.t .t2 {
+}
+
+.d {
+	font-size:x-small;
+	color:#8a8a8a;
+}
+
+.p {
+	color:#8a8a8a;
+}
+
+.u {
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+.f {
+	color:#999;
+	padding-top:5px;
+}
+
+.h {
+	font-weight:700;
+	background-color:#E8EEF7;
+	margin-top:3px;
+	padding:1px 1px 1px 3px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.b {
+	padding-top:3px;
+	padding-bottom:5px;
+}
+
+.s {
+	margin-top:5px;
+}
+
+.n {
+	padding-bottom:6px;
+}
+
+.o {
+	padding-bottom:7px;
+}
+
+.e {
+	padding-bottom:5px;
+}
+
+p {
+	margin:0;
+	margin-bottom:12px;
+}
+
+.g {
+	padding:3px;
+	background-color:#FC6;
+	margin-top:2px;
+}
+
+#accountNumber, #pin {
+	background: none;
+	border-radius: 0.5em;
+	line-height: 1.4em;
+	padding: 0.4em;
+	max-width: 100%;
+	width: 100%;
+	margin: 5px 0px;
+	font-size: 18px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#login {
+	border-radius: 0.5em;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#35546E', endColorstr='#0F3859'); /* IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#35546E), to(#0F3859)); /* webkit */
+	background: -moz-linear-gradient(top,  #35546E,  #0F3859); /* firefox 3.6+ */
+	border: 1px solid #CCCCCC;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0px 1px 1px black;
+	min-width: 0.75em;
+	margin-top: 8px;
+	padding: 0.6em 20px;
+	font-size: 18px;
+	width: 100%;
+}
+
+.fullButton {
+	border-radius: 0.5em;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#727272', endColorstr='#000000'); /* IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#727272), to(#000000)); /* webkit */
+	background: -moz-linear-gradient(top,  #727272,  #000000); /* firefox 3.6+ */
+	border: 1px solid #CCCCCC;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0px 1px 1px black;
+	min-width: 0.75em;
+	padding: 0.6em 0px;
+	font-size: 18px;
+	width: 100%;
+	margin: 0px auto 5px;
+}
+
+a.fullButton, a.fullButton:visited {
+	color: white;
+}
+
+a.fullButton:hover {
+	 border:1px solid #450111;
+	 text-decoration: underline;
+}
+
+
+#mob_signup {
+	clear: both;
+	padding: 0.6em 30px;
+	border: 1px solid rgb(179, 179, 179);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0F0F0', endColorstr='#E9EAEB'); /* IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#E9EAEB)); /* webkit */
+	background: -moz-linear-gradient(top,  #F0F0F0,  #E9EAEB); /* firefox 3.6+ */
+	color: rgb(62, 62, 62);
+	font-weight: bold;
+	text-shadow: 0px 0px 0px rgb(255, 255, 255);
+    font-size: 16px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+#goFull {
+	clear: both;
+	padding: 0.6em 15px;
+	color: black;
+	font-weight: normal;
+	text-shadow: 0px 0px 0px rgb(255, 255, 255);
+    font-size: 13px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+#mob_copyr {
+	display: block;
+	clear: both;
+	padding: 0.1em;
+	color: white;
+	font-weight: bold;
+    font-size: 13px;
+    margin: 5px auto;
+    text-align: center;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#727272', endColorstr='#000000'); /* IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#727272), to(#000000)); /* webkit */
+	background: -moz-linear-gradient(top,  #727272,  #000000); /* firefox 3.6+ */
+    border: 1px solid #F2F2F2;
+    text-shadow: 0px 0px 0px #4D4D4D;
+}
+
+a.mob_link_tel, a.mob_link_tel:visited, a.mob_link_tel:hover {
+	color: rgb(36, 137, 206);
+	text-decoration: none;
+	display: block;
+	
+}
+
+a.mob_link, a.mob_link:visited, a.mob_link:hover {
+	color: black;
+	text-decoration: none;
+}
+
+a.mob_link_tel:hover, a.mob_link:hover {
+	text-decoration: underline;
+}
+
+#mainHeader {
+	min-height: 1.1em;
+	text-align: center;
+	display: block;
+	margin: 1% 6% 1%;
+	padding: 0px;
+	text-overflow: ellipsis;
+	overflow: visible;
+	white-space: nowrap;
+	outline: 0px none !important;
+	}
+	
+.headerBanner {
+	border: 1px solid rgb(242, 242, 242);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#35546E', endColorstr='#0F3859'); /* IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#35546E), to(#0F3859)); /* webkit */
+	background: -moz-linear-gradient(top,  #35546E,  #0F3859); /* firefox 3.6+ */
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-shadow: 0px 0px 0px rgb(77, 77, 77);
+	}
+
+
+/* login confirmation */
+
+#loginConf_bg {
+	width: 100%;
+	height: 500px;
+	color: #fff;
+	background: black url(https://img.offtrackbetting.com/images/backgrounds/security.jpg) -330px 0 no-repeat;
+	}
+
+#loginConf_bgFade {
+    background: none no-repeat scroll 0px 0px black;
+    opacity: 0.5;
+    width: 96%;
+    height: 98%;
+    border: 1px solid white;
+    position: relative;
+    top: 1%;
+    margin: 1.8%;
+    }
+
+
+#loginConf_txtWrap {
+    position: absolute;
+    top: 4%;
+    right: 7%;
+    width: 86%;
+}
+
+	
+#loginConf_txtWrap p {
+	padding: 10px;
+	color: white;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	margin: 0px;
+}
+
+#loginConf_txtWrap hr {
+	width: 90%;
+	border-color: white;
+}
+
+#wrapper { 
+	padding: 7px 0px 0px;
+	margin: 0;
+	left: 0px;
+	text-align:left; 
+	float:left;
+	width:100%;
+	}
+
+
+.gradient-container ul.headlines {
+	list-style-image:none;
+	list-style-type:none;
+	padding: 0px;
+	margin: 0px;
+	overflow:auto;
+	font-size: 0.75em;
+	}
+	
+.gradient-container ul.headlines li {
+	background:url(https://img.offtrackbetting.com/images/backgrounds/bullet_gray.gif) 0 5px no-repeat;
+	padding-left:9px;
+	line-height:13px;
+	padding-bottom:3px;
+	color:#000000!important;
+	}
+	
+.gradient-container-border {
+	background: none;
+	border: 1px solid #999999;
+	padding: 0px 6px;
+	}
+		
+.openAccount {
+	background-color:#efefe7;
+	border: 1px black solid;
+	font: bold 16px Arial;
+	padding:2px;
+	text-align:center;
+	width: 90%;
+	margin: 15px auto;
+}
+
+.p32 {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.p24 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.p16 {
+	font-size: 14px;
+}
+
+.tryagain {
+	width: 95%;
+	font-size: 16px;
+}
