@@ -1,0 +1,3 @@
+# serve css files from www.offtrackbetting.com
+/css/*
+  Access-Control-Allow-Origin: https://www.offtrackbetting.com
