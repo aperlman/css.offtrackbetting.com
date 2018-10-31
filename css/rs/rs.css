@@ -7,8 +7,8 @@
 .tp-banner ul { visibility:hidden;}
 .tp-banner ul li { padding:0; }
 
-/* .tp-bannertimer	{	background-image:url('https://img.offtrackbetting.com/images/slider/timer-charcoal.png'); height:4px; } */
-.tp-bullets.simplebullets.round .bullet { background-image:url("https://img.offtrackbetting.com/images/slider/bullet.png");  }
+/* .tp-bannertimer	{	background-image:url('https://img2.offtrackbetting.com/images/slider/timer-charcoal.png'); height:4px; } */
+.tp-bullets.simplebullets.round .bullet { background-image:url("https://img2.offtrackbetting.com/images/slider/bullet.png");  }
 .tp-bullets.simplebullets.round .bullet:hover  { background-position:0 -20px; }
 .tp-caption { font-family: "Roboto Condensed", Trebuchet MS1, Trebuchet MS, sans-serif !important; font-weight: normal; color:#fff; line-height:normal; text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);}
 
@@ -22,7 +22,7 @@
 .tp-caption.btn-txt { padding:0 !important; font-weight:normal; background:none; -moz-border-radius: none; -webkit-border-radius: none; -khtml-border-radius: none; border-radius: none; -webkit-box-shadow:none; -moz-box-shadow: none; box-shadow: none; }
 .tp-caption.btn:active { position:absolute; margin-top:1px;}
 
-.tp-loader.spinner0 {  background:url('https://img.offtrackbetting.com/images/rs_assets/loader2.gif') no-repeat center center; background-color:transparent; -webkit-animation: none; animation: none; -moz-border-radius: none; -webkit-border-radius: none; -khtml-border-radius: none; border-radius: none; -webkit-box-shadow:none; -moz-box-shadow: none; box-shadow: none;}
+.tp-loader.spinner0 {  background:url('https://img2.offtrackbetting.com/images/rs_assets/loader2.gif') no-repeat center center; background-color:transparent; -webkit-animation: none; animation: none; -moz-border-radius: none; -webkit-border-radius: none; -khtml-border-radius: none; border-radius: none; -webkit-box-shadow:none; -moz-box-shadow: none; box-shadow: none;}
 
 .tp-bullets.hidebullets	{ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; -moz-opacity: 1; -khtml-opacity: 1; opacity: 1; } 
 

@@ -118,7 +118,7 @@ iframe.video.wide{min-height:430px;}
 .video-container iframe,
 .video-container object,
 .video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;}
-body.popup{padding:0px;margin:0px;background:#F5F5F5 url("https://img.offtrackbetting.com/images/backgrounds/bg_gradient3.jpg") repeat-x scroll center top;}
+body.popup{padding:0px;margin:0px;background:#F5F5F5 url("https://img2.offtrackbetting.com/images/backgrounds/bg_gradient3.jpg") repeat-x scroll center top;}
 #popup{margin:8px auto;position:relative;padding:0px;}
 #popup .tag-box{margin-bottom:0px;}
 #popup .popupContainer{padding:10px;background-color:white;}
@@ -304,7 +304,7 @@ table.table > thead > tr, table.table > thead > tr > td, table.table > thead > t
 .addthisevent-selected > i:before{content:"\f068";}
 .blockfooter{clear:both;text-align:right;border-top:1px dotted #b3b8bb;padding-top:12px;}
 .blockfooter a{position:relative;}
-.calltoaction{overflow:hidden;padding:15px 25px 25px 25px;text-align:center;color:#6C8EAA;-ms-border-radius:8px;-o-border-radius:8px;-khtml-border-radius:8px;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;background:url('https://img.offtrackbetting.com/images/flag-bg.jpg') top left no-repeat;}
+.calltoaction{overflow:hidden;padding:15px 25px 25px 25px;text-align:center;color:#6C8EAA;-ms-border-radius:8px;-o-border-radius:8px;-khtml-border-radius:8px;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;background:url('https://img2.offtrackbetting.com/images/flag-bg.jpg') top left no-repeat;}
 .calltoaction a{display:block;text-decoration:none;}
 .calltoaction h2{color:#fff;margin:0px 0px 15px;background:rgba(0, 0, 0, 0.5);line-height: 40px;}
 .calltoaction h3{font-size:26px;margin:0px 0px 20px;color:#fff;font-weight:normal;background:rgba(0, 0, 0, 0.5);line-height: 35px}
@@ -315,8 +315,8 @@ table.table > thead > tr, table.table > thead > tr > td, table.table > thead > t
 .calltoaction a:hover .btn{background:#870000;}
 .calltoaction .btn i{visibility:hidden;font-size:30px;position:absolute;line-height:normal;top:10px;right:12px;}
 
-/* #cali-marquee{background:url('https://img.offtrackbetting.com/images/california_flag.jpg') no-repeat scroll 50% 65% transparent; background-size: 100%;} */
- #big-marquee{background:url('https://img.offtrackbetting.com/images/otb-slider-18.jpg') top center no-repeat transparent; background-size: cover;} 
+/* #cali-marquee{background:url('https://img2.offtrackbetting.com/images/california_flag.jpg') no-repeat scroll 50% 65% transparent; background-size: 100%;} */
+ #big-marquee{background:url('https://img2.offtrackbetting.com/images/otb-slider-18.jpg') top center no-repeat transparent; background-size: cover;} 
 
 .marquee{overflow:hidden;padding:0px;text-align:center;color:#6C8EAA;}
 .marquee a{display:block;text-decoration:none;}
@@ -359,13 +359,13 @@ table.table > thead > tr, table.table > thead > tr > td, table.table > thead > t
 .footer .col-md-3{clear:none;}
 .social-icons{margin:0;padding:0;}
 .social-icons li{float:left;display:inline;list-style:none;margin-right:10px;margin-bottom:5px;text-indent:-9999px;}
-.social-icons li a, a.social-icon{background:url('https://img.offtrackbetting.com/images/icons/social-icons.png') left top no-repeat;width:33px;height:33px;display:block !important;transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;-ms-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;}
+.social-icons li a, a.social-icon{background:url('https://img2.offtrackbetting.com/images/icons/social-icons.png') left top no-repeat;width:33px;height:33px;display:block !important;transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;-ms-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;}
 .social-icons li:hover a{background-position:0 -43px;}
 .social_facebook{background-position:0 0 !important;}
 .social-icons li:hover .social_facebook{background-position:0 -43px !important;}
 .social_twitter{background-position:-40px 0 !important;}
 .social-icons li:hover .social_twitter{background-position:-40px -43px !important;}
-.social-icons .social_pintrest a{background-size:auto !important;background-image:url('https://img.offtrackbetting.com/images/icons/social-icons.png') !important;width:33px !important;height:33px !important;background-position:-80px 0 !important;}
+.social-icons .social_pintrest a{background-size:auto !important;background-image:url('https://img2.offtrackbetting.com/images/icons/social-icons.png') !important;width:33px !important;height:33px !important;background-position:-80px 0 !important;}
 .social-icons li.social_pintrest:hover a{background-position:-80px -43px !important;}
 .social_google{background-position:-120px 0 !important;}
 .social-icons li:hover .social_google{background-position:-120px -43px !important;}
@@ -468,10 +468,10 @@ iframe.video.wide{min-height:170px;}
 .login-header .loginToggle,
 .login-header #signupBtn{width:40%;}
 }
-#get-started{background:url('https://img.offtrackbetting.com/images/flag-bg.jpg') no-repeat scroll 50% 50% transparent;background-size:cover;}
+#get-started{background:url('https://img2.offtrackbetting.com/images/flag-bg.jpg') no-repeat scroll 50% 50% transparent;background-size:cover;}
 .overlay-darken{background-color:rgba(0,0,0,.6);padding-top:30px;padding-right:0;padding-bottom:20px;padding-left:0;}
 #get-started h3.get-started-title{font-size:2.42857142857em;margin:0 auto;text-shadow:1px 0 10px rgba(0,0,0,.5);color:white;}
-.otb-logo-bg{background: url('https://img.offtrackbetting.com/images/otb-logo.jpg') no-repeat scroll 50% 50% transparent;background-size: contain; background-color: #003158; border:solid 1px #7e7e7e;border-left:solid 2px #870000;}
+.otb-logo-bg{background: url('https://img2.offtrackbetting.com/images/otb-logo.jpg') no-repeat scroll 50% 50% transparent;background-size: contain; background-color: #003158; border:solid 1px #7e7e7e;border-left:solid 2px #870000;}
 .overlay-lighten{background-color:rgba(255, 255, 255, .9);padding-top:30px;padding-right:0;padding-bottom:5px;padding-left:0;}
 .otb-logo-bg h3{margin:0 auto 20px;color:black;}
 .otb-logo-bg p{color:black;}
@@ -484,7 +484,7 @@ iframe.video.wide{min-height:170px;}
 #get-started .btn{display:block;max-width:700px;margin:0px auto;}
 #get-started .get-started-cards{background-color:rgba(255,255,255,.9);border-radius:12px;box-shadow:1px 0 10px rgba(0,0,0,.5);border:black 1px solid;margin:20px auto 10px;padding:25px 20px;width:90%;max-width:800px;filter:alpha(opacity=90);opacity:.9;}
 #get-started .get-started-cards .circle-numbers{width:102px;height:102px;line-height:48px;margin:0 auto;position:relative;}
-#get-started .get-started-cards .circle-numbers .number{color:white;font-size:36px;font-weight:700;margin:0;position:absolute;top:0;right:0;bottom:0;left:0;text-shadow:none;background:url('https://img.offtrackbetting.com/images/star-step.png') center center no-repeat;}
+#get-started .get-started-cards .circle-numbers .number{color:white;font-size:36px;font-weight:700;margin:0;position:absolute;top:0;right:0;bottom:0;left:0;text-shadow:none;background:url('https://img2.offtrackbetting.com/images/star-step.png') center center no-repeat;}
 #get-started .get-started-cards .circle-numbers .number#number-1{padding:32px 39px;}
 #get-started .get-started-cards .circle-numbers .number#number-2{padding:32px 40px;}
 #get-started .get-started-cards .circle-numbers .number#number-3{padding:32px 41px;}
@@ -549,7 +549,7 @@ nav ul > li a i{font-size:20px;position:absolute;right:20px;top:auto;bottom:auto
 .front .navbar-header .navbar-left{display:none;}
 .front #left-menu{display:none;}
 .front #left-menu-btn{display:none;}
-.dividerBar{display:table; background-size: cover; background-position: left top; background-image: url('https://img.offtrackbetting.com/images/flag-bg.jpg'); border-right: 10px solid #003158;  border-left: 10px solid #003158; border-top: 1px solid #003158; border-bottom: 1px solid #003158; color:white;text-align:center;position:relative;height:56px;vertical-align:middle;z-index:100;width:100%;} /* color:#003158 */
+.dividerBar{display:table; background-size: cover; background-position: left top; background-image: url('https://img2.offtrackbetting.com/images/flag-bg.jpg'); border-right: 10px solid #003158;  border-left: 10px solid #003158; border-top: 1px solid #003158; border-bottom: 1px solid #003158; color:white;text-align:center;position:relative;height:56px;vertical-align:middle;z-index:100;width:100%;} /* color:#003158 */
 .dividerBar .container{position:relative; background-color:rgba(0,0,0,.3);}  /* rgba(0,0,0,.6)   rgba(255,255,255,.3);*/
 .dividerBar i.icon{position:absolute;left:30px;padding-right:5px;width:50px;height:43px;display:block;float:left;text-align:center;font-size:35px;font-weight:normal;line-height:42px;top:6px;margin-left:10px;color:#white;}
 .dividerBar h3{padding:0;line-height:55px;margin:0;width:auto;color:#white;}
@@ -662,7 +662,7 @@ website:   	http://www.themepunch.com
 .tp-bullets.simplebullets.round .bullet {
 	cursor:pointer;
 	position:relative;
-	background:url('https://img.offtrackbetting.com/images/rs_assets/bullet.png') no-Repeat top left;
+	background:url('https://img2.offtrackbetting.com/images/rs_assets/bullet.png') no-Repeat top left;
 	width:20px;
 	height:20px;
 	margin-right:0;
@@ -710,7 +710,7 @@ website:   	http://www.themepunch.com
 	z-index:100;
 	cursor:pointer;
 	position:relative;
-	background:url('https://img.offtrackbetting.com/images/rs_assets/large_left.png') no-Repeat top left;
+	background:url('https://img2.offtrackbetting.com/images/rs_assets/large_left.png') no-Repeat top left;
 	width:40px;
 	height:40px;
 }
@@ -719,7 +719,7 @@ website:   	http://www.themepunch.com
 	z-index:100;
 	cursor:pointer;
 	position:relative;
-	background:url('https://img.offtrackbetting.com/images/rs_assets/large_right.png') no-Repeat top left;
+	background:url('https://img2.offtrackbetting.com/images/rs_assets/large_right.png') no-Repeat top left;
 	width:40px;
 	height:40px;
 }
@@ -728,7 +728,7 @@ website:   	http://www.themepunch.com
 	z-index:100;
 	cursor:pointer;
 	position:relative;
-	background:url('https://img.offtrackbetting.com/images/rs_assets/large_left.png') no-Repeat 0 0;
+	background:url('https://img2.offtrackbetting.com/images/rs_assets/large_left.png') no-Repeat 0 0;
 	width:40px;
 	height:40px;
 }
@@ -737,7 +737,7 @@ website:   	http://www.themepunch.com
 	z-index:100;
 	cursor:pointer;
 	position:relative;
-	background:url('https://img.offtrackbetting.com/images/rs_assets/large_right.png') no-Repeat 0 0;
+	background:url('https://img2.offtrackbetting.com/images/rs_assets/large_right.png') no-Repeat 0 0;
 	width:40px;
 	height:40px;
 }
@@ -749,7 +749,7 @@ website:   	http://www.themepunch.com
 .tp-bannertimer {
 	width:100%;
 	height:10px;
-	background:url('https://img.offtrackbetting.com/images/rs_assets/timer.png');
+	background:url('https://img2.offtrackbetting.com/images/rs_assets/timer.png');
 	position:absolute;
 	z-index:200;
 	top:0;
@@ -781,7 +781,7 @@ website:   	http://www.themepunch.com
 .tp-loader.spinner0 {
 	width:40px;
 	height:40px;
-	background:url('https://img.offtrackbetting.com/images/rs_assets/loader.gif') no-repeat center center;
+	background:url('https://img2.offtrackbetting.com/images/rs_assets/loader.gif') no-repeat center center;
 	background-color:#fff;
 	box-shadow:0 0 20px 0 rgba(0,0,0,.15);
 	-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.15);
@@ -834,8 +834,8 @@ website:   	http://www.themepunch.com
 .tp-banner ul { visibility:hidden;}
 .tp-banner ul li { padding:0; }
 
-/* .tp-bannertimer	{	background-image:url("https://img.offtrackbetting.com/images/slider/timer-charcoal.png"); height:4px; } */
-.tp-bullets.simplebullets.round .bullet { background-image:url("https://img.offtrackbetting.com/images/slider/bullet.png");  }
+/* .tp-bannertimer	{	background-image:url("https://img2.offtrackbetting.com/images/slider/timer-charcoal.png"); height:4px; } */
+.tp-bullets.simplebullets.round .bullet { background-image:url("https://img2.offtrackbetting.com/images/slider/bullet.png");  }
 .tp-bullets.simplebullets.round .bullet:hover  { background-position:0 -20px; }
 .tp-caption { font-family: "Roboto Condensed", Trebuchet MS1, Trebuchet MS, sans-serif !important; font-weight: normal; color:#fff; line-height:normal; text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);}
 
@@ -850,7 +850,7 @@ website:   	http://www.themepunch.com
 .tp-caption.btn-txt { padding:0 !important; font-weight:normal; background:none; -moz-border-radius: none; -webkit-border-radius: none; -khtml-border-radius: none; border-radius: none; -webkit-box-shadow:none; -moz-box-shadow: none; box-shadow: none; }
 .tp-caption.btn:active { position:absolute; margin-top:1px;}
 
-.tp-loader.spinner0 {  background:url('https://img.offtrackbetting.com/images/rs_assets/loader2.gif') no-repeat center center; background-color:transparent; -webkit-animation: none; animation: none; -moz-border-radius: none; -webkit-border-radius: none; -khtml-border-radius: none; border-radius: none; -webkit-box-shadow:none; -moz-box-shadow: none; box-shadow: none;}
+.tp-loader.spinner0 {  background:url('https://img2.offtrackbetting.com/images/rs_assets/loader2.gif') no-repeat center center; background-color:transparent; -webkit-animation: none; animation: none; -moz-border-radius: none; -webkit-border-radius: none; -khtml-border-radius: none; border-radius: none; -webkit-box-shadow:none; -moz-box-shadow: none; box-shadow: none;}
 
 .tp-bullets.hidebullets	{ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; -moz-opacity: 1; -khtml-opacity: 1; opacity: 1; } 
 

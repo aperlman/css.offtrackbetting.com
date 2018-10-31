@@ -2,7 +2,7 @@ body{
 	align: 0 auto;
 	padding: 0; 
 	margin: 0; 
-	background: #951312 url(https://img.offtrackbetting.com/images/backgrounds/site_bg.gif) center repeat-y;
+	background: #951312 url(https://img2.offtrackbetting.com/images/backgrounds/site_bg.gif) center repeat-y;
 	font-size: 12pt; 
 	font-family: Arial, Helvetica, sans-serif;
 	}
@@ -58,7 +58,7 @@ font-size: 11px ;}
 .mainlogo {
 width: 333px;
 float: left;
-background: url(https://img.offtrackbetting.com/images/covers/header/images/covers_logo.gif) no-repeat;
+background: url(https://img2.offtrackbetting.com/images/covers/header/images/covers_logo.gif) no-repeat;
 height: 62px;
 z-index: 2;
 position: absolute;
@@ -69,7 +69,7 @@ margin: 20px 0 0 10px;
 
 
 .mainlogo /* holding the coversexperts logo - left side of header*/{
-background: url(https://img.offtrackbetting.com/images/images/contests/header/images/covers_logo_wagerline.gif) no-repeat 0 0;
+background: url(https://img2.offtrackbetting.com/images/images/contests/header/images/covers_logo_wagerline.gif) no-repeat 0 0;
 padding-bottom: 2px;
 }
 
@@ -80,23 +80,23 @@ margin-top: 39px;
 margin-left: 110px;
 width: 425px;
 height: 30px;
-background: url(https://img.offtrackbetting.com/images/contests/header/identifier/images/contests.gif) bottom right no-repeat;
+background: url(https://img2.offtrackbetting.com/images/contests/header/identifier/images/contests.gif) bottom right no-repeat;
 
 }
 
 
 .headback { /* the image behind the header*/
-background: #881212 url(https://img.offtrackbetting.com/images/contests/header/back_contests.gif); }
+background: #881212 url(https://img2.offtrackbetting.com/images/contests/header/back_contests.gif); }
 
 .covers-nav, * html .covers-nav {
-background:none; background:url(https://img.offtrackbetting.com/images/shared/header/pointers/images/covers-off.gif) no-repeat; 
+background:none; background:url(https://img2.offtrackbetting.com/images/shared/header/pointers/images/covers-off.gif) no-repeat; 
 height:17px;}
 
 .contests-nav  { 
-background:url(https://img.offtrackbetting.com/images/shared/header/pointers/images/contests.png) no-repeat; 
+background:url(https://img2.offtrackbetting.com/images/shared/header/pointers/images/contests.png) no-repeat; 
 height:23px; }
 
 * html .contests-nav { 
-background:url(https://img.offtrackbetting.com/images/shared/header/pointers/images/contests.gif) no-repeat; }
+background:url(https://img2.offtrackbetting.com/images/shared/header/pointers/images/contests.gif) no-repeat; }
 
 

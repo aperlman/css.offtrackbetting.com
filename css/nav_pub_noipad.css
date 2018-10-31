@@ -2,7 +2,7 @@ div#menunav {
 width:984px;
 position:relative;
 clear: both;
-background:url(https://img.offtrackbetting.com/images/top_nav/bg.png) repeat-x top left;
+background:url(https://img2.offtrackbetting.com/images/top_nav/bg.png) repeat-x top left;
 height:32px;
 padding-bottom:1px;
 z-index:100;
@@ -10,7 +10,7 @@ border: 1px solid #666666;
 }
 
 #nav {
-background: url(https://img.offtrackbetting.com/images/top_nav/bg.png) no-repeat left top;
+background: url(https://img2.offtrackbetting.com/images/top_nav/bg.png) no-repeat left top;
 }
 
 #nav, #nav ul {
@@ -73,7 +73,7 @@ text-transform: none;
 
 #nav li {
 	float: left;
-	background: url(https://img.offtrackbetting.com/images/top_nav/spacer.png) no-repeat right top;
+	background: url(https://img2.offtrackbetting.com/images/top_nav/spacer.png) no-repeat right top;
 	width: 11.1111%;
 	position:relative;
 	margin:0px;
@@ -82,7 +82,7 @@ text-transform: none;
 #nav li.nav_right {
 		width: 11.1111%;
         float: right;
-        background: url(https://img.offtrackbetting.com/images/top_nav/bg.png) no-repeat right top;
+        background: url(https://img2.offtrackbetting.com/images/top_nav/bg.png) no-repeat right top;
 }
 
 

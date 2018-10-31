@@ -18,7 +18,7 @@
       <div class="gradient-container-border">
        <div align="center">
 	<a href="/horse_betting_news/archive.html" title="Horse Racing News"><img 
-		src="https://img.offtrackbetting.com/images/otb-headlines.jpg" alt="Horse Racing Betting News"
+		src="https://img2.offtrackbetting.com/images/otb-headlines.jpg" alt="Horse Racing Betting News"
 		width="660" height="250" border="0"/></a></div> 
        <div class="spacerhalf"></div>
        <div class="gradient-container">

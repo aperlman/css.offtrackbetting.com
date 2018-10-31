@@ -44,7 +44,7 @@ website:   	http://www.themepunch.com
 .tp-bullets.simplebullets.round .bullet {
 	cursor:pointer;
 	position:relative;
-	background:url('https://img.offtrackbetting.com/images/rs_assets/bullet.png') no-Repeat top left;
+	background:url('https://img2.offtrackbetting.com/images/rs_assets/bullet.png') no-Repeat top left;
 	width:20px;
 	height:20px;
 	margin-right:0;
@@ -92,7 +92,7 @@ website:   	http://www.themepunch.com
 	z-index:100;
 	cursor:pointer;
 	position:relative;
-	background:url('https://img.offtrackbetting.com/images/rs_assets/large_left.png') no-Repeat top left;
+	background:url('https://img2.offtrackbetting.com/images/rs_assets/large_left.png') no-Repeat top left;
 	width:40px;
 	height:40px;
 }
@@ -101,7 +101,7 @@ website:   	http://www.themepunch.com
 	z-index:100;
 	cursor:pointer;
 	position:relative;
-	background:url('https://img.offtrackbetting.com/images/rs_assets/large_right.png') no-Repeat top left;
+	background:url('https://img2.offtrackbetting.com/images/rs_assets/large_right.png') no-Repeat top left;
 	width:40px;
 	height:40px;
 }
@@ -110,7 +110,7 @@ website:   	http://www.themepunch.com
 	z-index:100;
 	cursor:pointer;
 	position:relative;
-	background:url('https://img.offtrackbetting.com/images/rs_assets/large_left.png') no-Repeat 0 0;
+	background:url('https://img2.offtrackbetting.com/images/rs_assets/large_left.png') no-Repeat 0 0;
 	width:40px;
 	height:40px;
 }
@@ -119,7 +119,7 @@ website:   	http://www.themepunch.com
 	z-index:100;
 	cursor:pointer;
 	position:relative;
-	background:url('https://img.offtrackbetting.com/images/rs_assets/large_right.png') no-Repeat 0 0;
+	background:url('https://img2.offtrackbetting.com/images/rs_assets/large_right.png') no-Repeat 0 0;
 	width:40px;
 	height:40px;
 }
@@ -131,7 +131,7 @@ website:   	http://www.themepunch.com
 .tp-bannertimer {
 	width:100%;
 	height:10px;
-	background:url('https://img.offtrackbetting.com/images/rs_assets/timer.png');
+	background:url('https://img2.offtrackbetting.com/images/rs_assets/timer.png');
 	position:absolute;
 	z-index:200;
 	top:0;
@@ -163,7 +163,7 @@ website:   	http://www.themepunch.com
 .tp-loader.spinner0 {
 	width:40px;
 	height:40px;
-	background:url('https://img.offtrackbetting.com/images/rs_assets/loader.gif') no-repeat center center;
+	background:url('https://img2.offtrackbetting.com/images/rs_assets/loader.gif') no-repeat center center;
 	background-color:#fff;
 	box-shadow:0 0 20px 0 rgba(0,0,0,.15);
 	-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.15);
