@@ -1,0 +1,289 @@
+/* CSS addons, aggregating the following:
+  gradedstakes.css
+  news_article.css
+  saddlecloth.css
+*/
+
+/* graded stakes table styles */
+.gradedStakes, .gradedStakes table {
+	width: 100%;
+	}
+
+.gradedStakes th {
+	font-weight:bold;
+	text-align:left!important;
+	color:#000;
+	}
+
+.gradedStakes td {
+	width:auto;
+	text-align:left!important;
+	}
+	
+/*
+.gradedStakes td > span {
+	color:PURPLE!important;
+	}
+*/
+	
+.gradedStakes td > h3, .gradedStakes td > h3 > a {
+	font-weight:normal;
+	text-align:left!important;
+	color:#000;
+	background: none;
+	text-transform: none;
+	border: none;
+	height:inherit;
+	line-height:normal;
+	font-size:inherit; 
+	font-family: Verdana, Helvetica, sans-serif;
+	margin:0px;
+	padding: 0px;
+	color: inherit;
+	}
+	
+	
+.gradedStakes_results, .gradedStakes_results table {
+	width: 100%;
+	}
+
+.gradedStakes_results th {
+	padding: 0px 2px 0px 3px;
+	font-weight:bold;
+	text-align:left!important;
+	color:#FFFFFF;
+	background-color: black;
+	height: 28px;
+	vertical-align: bottom;
+	}
+
+.gradedStakes_results td {
+	width:auto;
+	padding: 0px 2px 0px 3px;
+	text-align:left!important;
+	}
+	
+/*
+.gradedStakes_results td > span {
+	color:PURPLE;
+	}	
+*/
+	
+.gradedStakes_results > tbody > tr:hover {
+	background: #d9ecff;
+	cursor:default;
+	}
+/* end gradedstakes styles */
+
+/* news article specific styles */
+#news_article .date {
+    color: #7A7A7A;
+    font: 11px "adelle-sans", Trebuchet MS1, Trebuchet MS, sans-serif;
+    float: right;
+}
+
+
+
+#news_article .subhead {
+    margin: 5px 0 10px;
+    overflow: hidden;
+    height: 25px;
+}
+
+#news_article .subhead cite.source {
+    display: inline;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px 0px 0px 5px;
+    font: 11px "adelle-sans", Trebuchet MS1, Trebuchet MS, sans-serif;
+    color: #000000;
+    float: left;
+}
+
+div#news_article > p:first-of-type {
+    margin-bottom: 0px;
+}
+
+#shareBar {
+	padding: 8px 0px 5px 0px;
+	border-bottom: 1px solid #C2C2C2;
+	vertical-align: baseline;
+		}
+
+#columns {
+        margin:15px auto;
+        text-align:left;
+        padding:5px;
+        border:1px solid #000;
+        background-color:#eee;
+       }
+
+      
+                       		
+#columns ul {
+	 	display: block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        list-style-type: none;
+
+}
+ 
+#columns li {
+  	font: 1em/1em "adelle-sans", Trebuchet MS1, Trebuchet MS, sans-serif;
+}
+ 
+#columns li.col1 {margin-left: .5em;}
+ 
+#columns li.col2 {margin-left: 4em;}
+ 
+#columns li.col3 {margin-left: 16em;}
+ 
+#columns li.coltopper {margin-top: -15em;}		
+/* end news article section */
+
+/* saddlecloth specfic styles */
+td.postposition {
+width: 38px;
+}
+
+td.postposition a {
+height: 40px;
+width: 40px;
+line-height: 40px;
+font-size: 20px;
+font-weight: bold;
+font-family: Arial;
+text-align: center;
+vertical-align: baseline;
+border: 1px solid black;
+border-radius: 10px;
+margin: 5px;
+background-repeat: no-repeat;
+background-position: top right;
+cursor: default;
+display: block;
+text-decoration: none;
+color: white!important;
+}
+
+
+td.pp1 a {
+background-color:#870000; /* D20001 */
+}
+
+td.pp2 a {
+background-color: white; 
+color: black!important;
+}
+
+td.pp3 a {
+background-color: #014282; 
+}
+
+td.pp4 a {
+background-color: #ffdd00;
+color: black!important; 
+}
+
+td.pp5 a {
+background-color: #01803d; 
+}
+
+td.pp6 a {
+background-color: black;
+color: #ffdd00!important; 
+}
+
+td.pp7 a {
+background-color: #dc7d29; 
+color: black!important;
+}
+
+td.pp8 a {
+background-color: #f387b8; 
+color: black!important;
+}
+
+td.pp9 a {
+background-color: #00bae0; 
+color: black!important;
+}
+
+td.pp10 a {
+background-color: #330066; 
+}
+
+td.pp11 a {
+background-color: #b2b7bb; 
+color: red!important;
+}
+
+td.pp12 a {
+background-color: #8dc73f; 
+color: black!important;
+}
+
+td.pp13 a {
+background-color: #54301a; 
+}
+
+td.pp14 a {
+background-color: #8a2529;
+color: #ffdd00!important;
+}
+
+td.pp15 a {
+background-color: #c5c19e; 
+color: black!important;
+}
+
+td.pp16 a {
+background-color: #749dd3; 
+color: black!important;
+}
+
+td.pp17 a {
+background-color: #002f5d; 
+}
+
+td.pp18 a {
+background-color: #024a1a; 
+color: #ffdd00!important;
+}
+
+td.pp19 a {
+background-color: #007db8; 
+color: black!important;
+}
+
+td.pp20 a {
+background-color: #ed008c; 
+color: yellow!important;
+}
+
+td.pp21 a {
+background-color: #c5b4e3; 
+color: #000099!important;
+}
+
+td.pp22 a {
+background-color: #3f526f; 
+color: white!important;
+}
+
+td.pp23 a {
+background-color: #9abeaa; 
+color: #006600!important;
+}
+
+td.pp24 a {
+background-color: #3e4827; 
+color: white!important;
+}
+
+td.ppAE a {
+background-color: none; 
+color: black!important;
+}
+/* end saddlecloth section */
