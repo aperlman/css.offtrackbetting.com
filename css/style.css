@@ -540,6 +540,8 @@ nav .level3 a{padding:10px 0 10px 24px;text-indent:-12px;color:#ECECEC;font-size
 nav .level4{padding:0 0 0 12px;font-size:0.9em;}
 nav .level4 > .active > a{color:#004da3;font-weight:bold;}
 nav ul > li a i{font-size:20px;position:absolute;right:20px;top:auto;bottom:auto;}
+#nav-mobile ul.level3 {display: none;}
+
 @media screen and (min-width:0px) and (max-width:696px){.fafabartog{float:right;margin:0px 0px 3px 10px;}
 .ticketBtn{float:left;margin:0px 8px 3px 0px;}
 }
