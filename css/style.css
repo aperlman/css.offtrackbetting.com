@@ -310,6 +310,8 @@ table.table > thead > tr, table.table > thead > tr > td, table.table > thead > t
 .calltoaction h3{font-size:26px;margin:0px 0px 20px;color:#fff;font-weight:normal;background:rgba(0, 0, 0, 0.5);line-height: 35px}
 .calltoaction #object{visibility:hidden;display:block;}
 .calltoaction #object i{color:#fff;margin:0px auto;padding:15px;font-size:84px;}
+.calltoaction #object1{visibility:hidden;display:block;}
+.calltoaction #object1 i{color:#fff;margin:0px auto;padding:15px;font-size:84px;}
 .calltoaction .btn{position:relative;display:block;font-size:24px;padding:10px;}
 .calltoaction .btn:active{top:1px;}
 .calltoaction a:hover .btn{background:#870000;}
