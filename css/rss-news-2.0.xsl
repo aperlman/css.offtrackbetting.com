@@ -3,7 +3,7 @@
 <xsl:template match="/rss">
     <html>
     <head>
-     <link href="https://css.offtrackbetting.com/css/base.css" rel="stylesheet" type="text/css" />
+     <link href="https://css2.offtrackbetting.com/css/base.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
      <h1>
