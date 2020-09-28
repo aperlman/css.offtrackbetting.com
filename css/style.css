@@ -151,6 +151,9 @@ body.popup{padding:0px;margin:0px;background:#F5F5F5 url("https://img2.offtrackb
 .login-header{float:right;}
 .login-header .loginToggle{display:none;}
 .login-header a i{display:none;}
+.member-header{float:right!important;text-align:center;}
+.member-header a i{display:block;padding:0;position:relative;top:-2px;right:auto;font-size:24px;}
+#ticketDepBtn,#ticketCancelBtn{width:40px;}
 #top .navbar-header{display:none;}
 .login .form-control::-webkit-input-placeholder{color:#6f7983;opacity:1;}
 .login .form-control::-moz-placeholder{color:#6f7983;opacity:1;}
