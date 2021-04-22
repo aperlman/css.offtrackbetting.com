@@ -201,7 +201,7 @@ select{padding:5px;margin:0;-webkit-border-radius:4px;-moz-border-radius:4px;bor
 .select-group:before, .select-group.required:before{height:40px;}
 .login input#pin, .login input#accountNumber, .login select{width:100%;height:40px;}
 .required input, .required select, .required input:focus, .required select:focus{height:40px;}
-#top #signupBtn. #top #logoutButton{position:relative;right:auto;top:auto;}
+#top #signupBtn, #top #logoutButton{position:relative;right:auto;top:auto;}
 #top #loginButton{width:100%;float:left;margin:0;height:auto;font-size:16px;}
 .desktop-only{display:none;}
 .blockfooter{border-top:none !important;border-bottom:1px dotted #b3b8bb;padding-bottom:12px;padding-top:none !important;}
@@ -307,7 +307,8 @@ table.table > thead > tr, table.table > thead > tr > td, table.table > thead > t
 .addthisevent-selected > i:before{content:"\f068";}
 .blockfooter{clear:both;text-align:right;border-top:1px dotted #b3b8bb;padding-top:12px;}
 .blockfooter a{position:relative;}
-.calltoaction{overflow:hidden;padding:15px 25px 25px 25px;text-align:center;color:#6C8EAA;-ms-border-radius:8px;-o-border-radius:8px;-khtml-border-radius:8px;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;background:url('https://img2.offtrackbetting.com/images/flag-bg.jpg') top left no-repeat;}
+.calltoaction{overflow:hidden;padding:15px 25px 25px 25px;text-align:center;color:#6C8EAA;-ms-border-radius:8px;-o-border-radius:8px;-khtml-border-radius:8px;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;}
+.calltoaction.lazyloaded{background:url('https://img2.offtrackbetting.com/images/flag-bg.jpg') top left no-repeat;}
 .calltoaction a{display:block;text-decoration:none;}
 .calltoaction h2{color:#fff;margin:0px 0px 15px;background:rgba(0, 0, 0, 0.5);line-height: 40px;}
 .calltoaction h3{font-size:26px;margin:0px 0px 20px;color:#fff;font-weight:normal;background:rgba(0, 0, 0, 0.5);line-height: 35px}
@@ -365,14 +366,15 @@ table.table > thead > tr, table.table > thead > tr > td, table.table > thead > t
 .social-icons{margin:0;padding:0;}
 .social-icons li{float:left;display:inline;list-style:none;margin-right:10px;margin-bottom:5px;text-indent:-9999px;}
 .social-icons li a, a.social-icon{background:url('https://img2.offtrackbetting.com/images/icons/social-icons.png') left top no-repeat;width:33px;height:33px;display:block !important;transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;-ms-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;}
+/* .social-icons.lazyloaded{background:url('https://img2.offtrackbetting.com/images/icons/social-icons.png') left top no-repeat;} */
 .social-icons li:hover a{background-position:0 -43px;}
 .social_facebook{background-position:0 0 !important;}
 .social-icons li:hover .social_facebook{background-position:0 -43px !important;}
 .social_twitter{background-position:-40px 0 !important;}
 .social-icons li:hover .social_twitter{background-position:-40px -43px !important;}
-.social-icons .social_pintrest a{background-size:auto !important;background-image:url('https://img2.offtrackbetting.com/images/icons/social-icons.png') !important;width:33px !important;height:33px !important;background-position:-80px 0 !important;}
+/* .social-icons .social_pintrest a{background-size:auto !important;background-image:url('https://img2.offtrackbetting.com/images/icons/social-icons.png') !important;width:33px !important;height:33px !important;background-position:-80px 0 !important;}
 .social-icons li.social_pintrest:hover a{background-position:-80px -43px !important;}
-.social_google{background-position:-120px 0 !important;}
+.social_google{background-position:-120px 0 !important;} */
 .social-icons li:hover .social_google{background-position:-120px -43px !important;}
 .social_email{background-position:-160px 0 !important;}
 .social-icons li:hover .social_email{background-position:-160px -43px !important;}
@@ -558,8 +560,8 @@ nav ul > li a i{font-size:20px;position:absolute;right:20px;top:auto;bottom:auto
 .front #left-menu-btn{display:none;}
 .dividerBar{display:table; background-size: cover; background-position: left top; background-image: url('https://img2.offtrackbetting.com/images/flag-bg.jpg'); border-right: 10px solid #003158;  border-left: 10px solid #003158; border-top: 1px solid #003158; border-bottom: 1px solid #003158; color:white;text-align:center;position:relative;height:56px;vertical-align:middle;z-index:100;width:100%;} /* color:#003158 */
 .dividerBar .container{position:relative; background-color:rgba(0,0,0,.3);}  /* rgba(0,0,0,.6)   rgba(255,255,255,.3);*/
-.dividerBar i.icon{position:absolute;left:30px;padding-right:5px;width:50px;height:43px;display:block;float:left;text-align:center;font-size:35px;font-weight:normal;line-height:42px;top:6px;margin-left:10px;color:#white;}
-.dividerBar h3{padding:0;line-height:55px;margin:0;width:auto;color:#white;}
+.dividerBar i.icon{position:absolute;left:30px;padding-right:5px;width:50px;height:43px;display:block;float:left;text-align:center;font-size:35px;font-weight:normal;line-height:42px;top:6px;margin-left:10px;color:white;}
+.dividerBar h3{padding:0;line-height:55px;margin:0;width:auto;color:white;}
 .dividerBar h3 a, .dividerBar h3 a:visited, .dividerBar h3 a:hover, .dividerBar h3 a:focus{color:#fbfbfb;font-weight:bold;text-decoration:none;}
 .dividerBar i.fa-film{line-height:44px;}
 .dividerBar .btn{position:absolute;right:30px;top:10px;text-align:center;font-size:110%;padding:6px 12px;}
@@ -1029,3 +1031,27 @@ website:   	http://www.themepunch.com
   margin-bottom: 5px;
   font-size:22px;
   }
+
+/** aspect ratio calculations **/
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+[style*="--aspect-ratio"] > img {  
+  height: auto;
+} 
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }  
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
