@@ -167,7 +167,7 @@ text-decoration: none;
 color: white!important;
 }
 
-
+/* thoroughbred colors */
 td.pp1 a {
 background-color:#870000; /* D20001 */
 }
@@ -219,71 +219,119 @@ background-color: #b2b7bb;
 color: red!important;
 }
 
-td.pp12 a {
+td.pp12 a, td.hpp12 a {
 background-color: #8dc73f; 
 color: black!important;
 }
 
-td.pp13 a {
+td.pp13 a, td.hpp13 a {
 background-color: #54301a; 
 }
 
-td.pp14 a {
+td.pp14 a, td.hpp14 a {
 background-color: #8a2529;
 color: #ffdd00!important;
 }
 
-td.pp15 a {
+td.pp15 a, td.hpp15 a {
 background-color: #c5c19e; 
 color: black!important;
 }
 
-td.pp16 a {
+td.pp16 a, td.hpp16 a {
 background-color: #749dd3; 
 color: black!important;
 }
 
-td.pp17 a {
+td.pp17 a, td.hpp17 a {
 background-color: #002f5d; 
 }
 
-td.pp18 a {
+td.pp18 a, td.hpp18 a {
 background-color: #024a1a; 
 color: #ffdd00!important;
 }
 
-td.pp19 a {
+td.pp19 a, td.hpp19 a {
 background-color: #007db8; 
 color: black!important;
 }
 
-td.pp20 a {
+td.pp20 a, td.hpp20 a {
 background-color: #ed008c; 
 color: yellow!important;
 }
 
-td.pp21 a {
+td.pp21 a, td.hpp21 a {
 background-color: #c5b4e3; 
 color: #000099!important;
 }
 
-td.pp22 a {
+td.pp22 a, td.hpp22 a {
 background-color: #3f526f; 
 color: white!important;
 }
 
-td.pp23 a {
+td.pp23 a, td.hpp23 a {
 background-color: #9abeaa; 
 color: #006600!important;
 }
 
-td.pp24 a {
+td.pp24 a, td.hpp24 a {
 background-color: #3e4827; 
 color: white!important;
 }
 
-td.ppAE a {
+td.ppAE a, td.hppAE a {
 background-color: none; 
 color: black!important;
+}
+
+/* harness colors */
+td.hpp1 a {
+  background-color:#870000;
+}
+
+td.hpp2 a {
+  background-color: #014282; 
+}
+
+td.hpp3 a {
+  background-color: rgb(178, 180, 177);
+  color: black!important;
+}
+
+td.hpp4 a {
+  background-color: #01803d;
+}
+
+td.hpp5 a {
+  background-color: black; 
+}
+
+td.hpp6 a {
+  background-color: #ffdd00;
+  color: black!important;
+}
+
+td.hpp7 a {
+  background-color: #f387b8; 
+  color: black!important;
+}
+
+td.hpp8 a {
+  background-color: rgb(107, 107, 107);
+}
+
+td.hpp9 a {
+  background-color: #330066; 
+}
+
+td.hpp10 a {
+  background-color: rgb(38, 61, 136); 
+}
+
+td.hpp11 a {
+  background-color: #00bae0; 
 }
 /* end saddlecloth section */
