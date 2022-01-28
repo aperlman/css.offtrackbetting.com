@@ -130,7 +130,7 @@ body.popup{padding:0px;margin:0px;background:#F5F5F5 url("https://img2.offtrackb
 #top .logo-sm{display:none;}
 #top .logo-sm img{margin:8px 0px 0px;}
 #top .logo-md{display:none;}
-.login{margin:10px 10px 0 0;float:right;line-height:normal;display:block;visibility:visible;}
+/* .login{margin:10px 10px 0 0;float:right;line-height:normal;display:block;visibility:visible;} */
 .login form{float:left;overflow:hidden;}
 .login .form-group{position:relative;margin-right:3px;}
 .login .form-control{margin:0;}
@@ -142,15 +142,17 @@ body.popup{padding:0px;margin:0px;background:#F5F5F5 url("https://img2.offtrackb
 .login input#pin:focus{width:120px;}
 .login .forgot{padding:4px;height:auto;font-size:10px;position:absolute;right:5px;top:5px;width:40px;text-align:center;color:white;}
 #signupBtn, #signupBtnLogin, #logoutButton, #loginButton, .loginToggle, .loginToggle:hover, .loginToggle:focus, .loginToggle:active{height:auto;padding:7px 12px;display:inline;margin-left:10px;line-height:normal;font-weight:700;border:0;}
-#signupBtn, #signupBtnLogin{margin:8px 0 0 0;display:block;height:36px;padding:8px 12px;font-size:18px;}
+#signupBtn, #signupBtnLogin{margin:8px 0 0 0;display:inline-block;height:36px;padding:8px 12px;font-size:18px;}
 .ticketBtn{font-family:"Roboto Condensed", Trebuchet MS1, Trebuchet MS, sans-serif;margin:10px 0px 0px 10px;display:block;height:36px;padding:8px 8px;font-size:16px;float:left;}
 .ticketBtnFirst{margin-left:20px;}
 .form-control{font-size: 16px;}
 #logoutButton, #loginButton{margin-left:2px;color:#444;}
 #logoutButton{float:left;margin:12px 10px 0px 0px;position:relative;}
+
 .login-header{float:right;}
-.login-header .loginToggle{display:none;}
-.login-header a i{display:none;}
+/* .login-header .loginToggle{display:none;} */
+/* .login-header a i{display:none;} */
+
 .member-header{float:right!important;text-align:center;}
 .member-header a i{display:block;padding:0;position:relative;top:-2px;right:auto;font-size:24px;}
 #ticketDepBtn,#ticketCancelBtn{width:40px;}
@@ -177,10 +179,16 @@ select{padding:5px;margin:0;-webkit-border-radius:4px;-moz-border-radius:4px;bor
 .login .required input#accountNumber:focus{width:162px;}
 .login .required input#pin{width:92px;}
 .login .required input#pin:focus{width:122px;}
-@media screen and (min-width:0px) and (max-width:991px){.login.collapse{display:none;}
+
+@media screen and (min-width:0px) and (max-width:991px){
+.desktop-only{display:none;}
+.blockfooter{border-top:none !important;border-bottom:1px dotted #b3b8bb;padding-bottom:12px;padding-top:none !important;}
+}
+
+.login.collapse{display:none;}
 .login.collapse.in{display:block;}
 .login-header{margin:0;}
-.login-header .loginToggle{float:left;display:inline-block;border:0;width:auto;position:relative;margin:10px 10px 0 0;line-height:normal;padding-right:26px;font-size:16px;}
+.login-header .loginToggle{float:none;display:inline-block;border:0;width:auto;position:relative;margin:10px 10px 0 0;line-height:normal;padding-right:26px;font-size:16px;}
 .login-header .loginToggle i{font-family:'FontAwesome';position:absolute;right:10px;top:5px;}
 .login-header .loginToggle.collapsed i{top:5px;}
 .login-header .loginToggle i:before{content:"\f106";}
@@ -203,9 +211,8 @@ select{padding:5px;margin:0;-webkit-border-radius:4px;-moz-border-radius:4px;bor
 .required input, .required select, .required input:focus, .required select:focus{height:40px;}
 #top #signupBtn, #top #logoutButton{position:relative;right:auto;top:auto;}
 #top #loginButton{width:100%;float:left;margin:0;height:auto;font-size:16px;}
-.desktop-only{display:none;}
-.blockfooter{border-top:none !important;border-bottom:1px dotted #b3b8bb;padding-bottom:12px;padding-top:none !important;}
-}
+
+
 @media screen and (min-width:0px) and (max-width:696px){
 #main{padding-top:115px !important;}
 }
@@ -271,6 +278,8 @@ table.table > thead > tr, table.table > thead > tr > td, table.table > thead > t
 #odds_preview h2, #odds_preview p {margin: 0px;}
 #odds_preview h2 {line-height: 1.1em;}
 #odds_preview > #gradedStakes_results > table.table {margin-bottom: 0px;}
+
+
 @media (max-width:767px){#odds_preview > div.table-responsive {margin-bottom: 0px;}}
 #odds_preview > #gradedStakes_results > table.table > thead > tr > th {background-color:#870000 !important; color: white; text-align:left }
 #odds_preview > #odds_preview_footer {background-color:#003158; color: white; margin: 0px; padding: 10px; text-align: center;}
@@ -434,16 +443,20 @@ h1{font-size:1.8em;}
 h2{font-size:1.6em;}
 h3{font-size:1.6em;}
 }
+
+#top .login-header{float:right;clear:none;width:auto;margin:1px 0px 0px;}
+
+
 @media screen and (min-width:0px) and (max-width:696px){
 #top .navbar-header{margin:0px !important;}
 #top .navbar-header .navbar-left{line-height:31px;}
 #top .container{padding:0 15px;}
 #top .logo-lrg{display:block;float:none;margin:0px auto;height:auto;width:302px;}
 #top .logo-lrg img, #top.fixed .logo-lrg img{display:inline;max-height:40px !important;}
-#top .login-header{float:none;clear:none;width:auto;margin:1px 0px 0px;}
-.login-header{clear:both;float:none;width:100%;margin:0 auto 15px;text-align:center;}
 .login-header .loginToggle, .login-header #signupBtn{float:left !important;padding:7px 0;width:40%;text-align:center;margin:0px 0px 10px !important;}
 .login-header #signupBtn{float:right !important;height:auto;padding:7px 12px;line-height:normal;font-weight:700;border:0;display:block;font-size:16px;}
+#top .login-header{float:none;clear:none;width:auto;margin:1px 0px 0px;}
+.login-header{clear:both;float:none;width:100%;margin:0 auto 15px;text-align:center;}
 .login-header a i{display:block;padding:0;position:relative;top:auto;right:auto;font-size:20px;}
 .login-header .loginToggle i{position:absolute;top:5px;right:10px;}
 .login-header .loginToggle i:before{}
@@ -466,6 +479,10 @@ iframe.video.wide{min-height:170px;}
 .dateCarousel .dateLarge .day span{padding-left:0;padding-right:0;width:48.5%;}
 */
 }
+
+
+
+
 @media screen and (min-width:0px) and (max-width:333px){
 #top .logo-lrg{width:290px;}
 #top .logo-lrg img,
