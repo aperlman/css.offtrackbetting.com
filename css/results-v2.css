@@ -1,0 +1,286 @@
+/* HEADER */
+#race #raceTitle {
+  background-color: #870000;
+  padding: 0px;
+  color: white;
+  margin: 0;
+}
+
+#race #raceTitle h3 {
+  padding: 6px 10px 6px;
+  margin: 0px;
+}
+
+#race #raceTitle h3 span {
+  font-size: 14px;
+  float: right;
+  padding-left: 15px;
+}
+
+/* SELECTIONS */
+
+/* M/L Odds Only */
+#race div.odds tbody tr td:last-child {
+  text-align: center;
+}
+
+#race #selection table tr #selectionText {
+  text-align: left !important;
+}
+
+#race #selection table tr th {
+  text-align: center !important;
+}
+
+#race #selection table tbody tr td {
+  vertical-align: middle;
+}
+
+/* amounts */
+#race table tbody tr td#amt:not(:empty)::before {
+  content: "$";
+}
+
+#race #selection table tbody tr td#amt {
+  text-align: right !important;
+}
+
+/* DIVIDENDS */
+#race #dividends {
+  border: 0px;
+  padding: 0px;
+}
+
+/* Race Dividends Column Headers */
+#race #dividends table tr *:last-child { text-align: right } /* last column */
+
+/* DETAILS */
+#race ul { /* remove bullets */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f9f9f9;;
+}
+
+/* ACTION */
+#race #actionbox {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: rgb(230, 230, 230); 
+  color: black; 
+  border: 1px solid rgb(111, 111, 111); 
+  font-size: 18px;
+}
+
+/* message */
+#race #actionbox div.row div {
+  padding: 15px;
+}
+
+/* button */
+#race #actionbox div.row div a {
+  margin-left: auto;
+  display: block;
+  font-size: 26px;
+}
+
+/* Font Awesome Icon (not inherited from above) */
+#race #actionbox div.row div a i {
+  font-size: 26px;
+}
+
+/* STYLE ADDONS - lifted from https://css2.offtrackbetting.com/css/style_addons.css */
+#race #selection table tr td.postposition {
+  width: 38px;
+}
+
+#race #selection table tr td.postposition a {
+height: 40px;
+width: 40px;
+line-height: 40px;
+font-size: 20px;
+font-weight: bold;
+font-family: Arial;
+text-align: center;
+/* vertical-align: baseline; <-- block display vertical-align not used */
+border: 1px solid black;
+border-radius: 10px;
+margin: 5px;
+background-repeat: no-repeat;
+background-position: top right;
+cursor: default;
+display: block;
+text-decoration: none;
+color: white!important;
+}
+
+/* thoroughbred colors */
+#race #selection table tr td.pp1 a {
+background-color:#870000; /* D20001 */
+}
+
+#race #selection table tr td.pp2 a {
+background-color: white; 
+color: black!important;
+}
+
+#race #selection table tr td.pp3 a {
+background-color: #014282; 
+}
+
+#race #selection table tr td.pp4 a {
+background-color: #ffdd00;
+color: black!important; 
+}
+
+#race #selection table tr td.pp5 a {
+background-color: #01803d; 
+}
+
+#race #selection table tr td.pp6 a {
+background-color: black;
+color: #ffdd00!important; 
+}
+
+#race #selection table tr td.pp7 a {
+background-color: #dc7d29; 
+color: black!important;
+}
+
+#race #selection table tr td.pp8 a {
+background-color: #f387b8; 
+color: black!important;
+}
+
+#race #selection table tr td.pp9 a {
+background-color: #00bae0; 
+color: black!important;
+}
+
+#race #selection table tr td.pp10 a {
+background-color: #330066; 
+}
+
+#race #selection table tr td.pp11 a {
+background-color: #b2b7bb; 
+color: red!important;
+}
+
+/* extended thoroughbred & harness colors */
+#race #selection table tr td.pp12 a, #race #selection table tr td.hpp12 a {
+background-color: #8dc73f; 
+color: black!important;
+}
+
+#race #selection table tr td.pp13 a, #race #selection table tr td.hpp13 a {
+background-color: #54301a; 
+}
+
+#race #selection table tr td.pp14 a, #race #selection table tr td.hpp14 a {
+background-color: #8a2529;
+color: #ffdd00!important;
+}
+
+#race #selection table tr td.pp15 a, #race #selection table tr td.hpp15 a {
+background-color: #c5c19e; 
+color: black!important;
+}
+
+#race #selection table tr td.pp16 a, #race #selection table tr td.hpp16 a {
+background-color: #749dd3; 
+color: black!important;
+}
+
+#race #selection table tr td.pp17 a, #race #selection table tr td.hpp17 a {
+background-color: #002f5d; 
+}
+
+#race #selection table tr td.pp18 a, #race #selection table tr td.hpp18 a {
+background-color: #024a1a; 
+color: #ffdd00!important;
+}
+
+#race #selection table tr td.pp19 a, #race #selection table tr td.hpp19 a {
+background-color: #007db8; 
+color: black!important;
+}
+
+#race #selection table tr td.pp20 a, #race #selection table tr td.hpp20 a {
+background-color: #ed008c; 
+color: yellow!important;
+}
+
+#race #selection table tr td.pp21 a, #race #selection table tr td.hpp21 a {
+background-color: #c5b4e3; 
+color: #000099!important;
+}
+
+#race #selection table tr td.pp22 a, #race #selection table tr td.hpp22 a {
+background-color: #3f526f; 
+color: white!important;
+}
+
+#race #selection table tr td.pp23 a, #race #selection table tr td.hpp23 a {
+background-color: #9abeaa; 
+color: #006600!important;
+}
+
+#race #selection table tr td.pp24 a, #race #selection table tr td.hpp24 a {
+background-color: #3e4827; 
+color: white!important;
+}
+
+#race #selection table tr td.ppAE a, #race #selection table tr td.hppAE a {
+background-color: none; 
+color: black!important;
+}
+
+/* harness colors */
+#race #selection table tr td.hpp1 a {
+  background-color:#870000;
+}
+
+#race #selection table tr td.hpp2 a {
+  background-color: #014282; 
+}
+
+#race #selection table tr td.hpp3 a {
+  background-color: rgb(178, 180, 177);
+  color: black!important;
+}
+
+#race #selection table tr td.hpp4 a {
+  background-color: #01803d;
+}
+
+#race #selection table tr td.hpp5 a {
+  background-color: black; 
+}
+
+#race #selection table tr td.hpp6 a {
+  background-color: #ffdd00;
+  color: black!important;
+}
+
+#race #selection table tr td.hpp7 a {
+  background-color: #f387b8; 
+  color: black!important;
+}
+
+#race #selection table tr td.hpp8 a {
+  background-color: rgb(107, 107, 107);
+}
+
+#race #selection table tr td.hpp9 a {
+  background-color: #330066; 
+}
+
+#race #selection table tr td.hpp10 a {
+  background-color: rgb(38, 61, 136); 
+}
+
+#race #selection table tr td.hpp11 a {
+  background-color: #00bae0; 
+}
+
+/* end saddlecloth section */
