@@ -55,11 +55,14 @@
 #race #dividends table tr *:last-child { text-align: right } /* last column */
 
 /* DETAILS */
-#race ul { /* remove bullets */
-  list-style-type: none;
+#race ul {
   padding: 0;
   margin: 0;
-  background-color: #f9f9f9;;
+  background-color: #f9f9f9;
+}
+
+#race ul li { /* remove bullets */
+  list-style-type: none;
 }
 
 /* ACTION */
