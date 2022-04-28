@@ -128,6 +128,10 @@
 }
 
 /* STYLE ADDONS - lifted from https://css2.offtrackbetting.com/css/style_addons.css */
+#results_content {
+  min-height: 1500px;
+}
+
 #race #selection table tr td.postposition {
   width: 38px;
 }
