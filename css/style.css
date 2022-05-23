@@ -402,11 +402,14 @@ table.table > thead > tr, table.table > thead > tr > td, table.table > thead > t
 @media (min-width:992px){
 .left-col-call-to-action {display:none; visibility: hidden;}
 }
+
 @media (max-width:1200px){
 h2{font-size:31px;}
 .footer h3{font-size:23px;}
 }
 @media (max-width:1024px){
+.footer ul li, .copyright a {padding: 6px 0px; margin-bottom: 8px;}
+.footer a, .copyright a {padding: 15.5px 0px;}
 iframe.video{min-height:500px;}
 iframe.video.wide{min-height:375px;}
 #top #signupBtn{float:right;}
