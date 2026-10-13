@@ -1,0 +1,155 @@
+/* OTB hero carousel — Bootstrap 5 Carousel + CSS, replaces Slider Revolution.
+   Parity reference: rs.revolution.init.js on production
+     delay:10000 (observed ~11s slide-to-slide), startwidth:1200, startheight:480, autoHeight,
+     hideThumbs:10 (arrows + bullets only on hover), onHoverStop:on, touchenabled:on,
+     hide bullets/arrows on mobile, hideTimerBar:on; defaults navigationType:bullet,
+     navigationArrows:solo, loop forever. Slides: data-transition=fade, data-masterspeed=1000.
+   See tmp/phase-out-jquery/bootstrap5-upgrade-decisions.md item 2 (Option E) and
+   tmp/phase-out-jquery/sample-otb-hero-carousel.html for the reviewed prototype. */
+.otb-hero {
+  --otb-red: #870000;
+  --otb-fade: 1s;                 /* data-masterspeed="1000" */
+  container-type: inline-size;    /* lets everything scale off the slider width, like RS's 1200px grid */
+  font-family: "Roboto Condensed", "Trebuchet MS", sans-serif;
+  background: #0d1b2a;
+}
+
+/* RS grid is 1200x480 and scales down proportionally below 1200px (autoHeight). 480/1200 = 40cqw. */
+.otb-hero .carousel-item { height: min(480px, 40cqw); }
+
+/* 1s crossfade instead of Bootstrap's 0.6s. Bootstrap has no CSS variable for this, so override both
+   rules; Bootstrap's JS reads the computed duration from the outgoing item, so timing stays in sync. */
+.otb-hero.carousel-fade .carousel-item { transition-duration: var(--otb-fade); }
+.otb-hero.carousel-fade .active.carousel-item-start,
+.otb-hero.carousel-fade .active.carousel-item-end { transition: opacity 0s var(--otb-fade); }
+
+/* Real <img>, not a JS-applied background: the browser can fetch/paint it immediately */
+.otb-hero .carousel-item > img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: top center;
+}
+
+/* Captions: right-aligned, vertically centred, 100px from the right edge (data-x=right data-hoffset=-100).
+   All sizes are min(desktop px, px/1200 of width) so they scale with the slider like RS does. */
+.otb-hero .otb-caption {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; justify-content: center; align-items: flex-end;
+  padding-right: min(100px, 8.333cqw); text-align: right; color: #fff;
+}
+.otb-hero .otb-title {
+  font-size: min(80px, 6.667cqw); font-weight: 700; line-height: 1; margin: 0 0 .15em;
+  text-shadow: 3px 3px 5px #000;
+}
+.otb-hero .otb-sub {
+  font-size: min(40px, 3.333cqw); font-weight: 400; line-height: 1.1; margin: 0 0 .75em;
+  text-shadow: 3px 3px 5px #000;
+}
+.otb-hero .btn-otb {
+  font-size: min(40px, 3.333cqw); font-weight: 700; line-height: 1.2;
+  padding: min(15px, 1.25cqw) min(25px, 2.083cqw); border-radius: 8px; border: 0;
+  background: var(--otb-red); color: #fff;
+}
+.otb-hero .btn-otb:hover, .otb-hero .btn-otb:focus-visible { background: #a30000; color: #fff; }
+.otb-hero .otb-learn {
+  font-size: min(22px, 1.833cqw); color: #fff; text-decoration: none; margin-top: .6em;
+}
+.otb-hero .otb-learn:hover { text-decoration: underline; }
+
+/* Fallback for browsers without container queries: fixed breakpoints instead of proportional
+   cqw scaling, since an unsupported unit inside min() invalidates the whole declaration. */
+@supports not (container-type: inline-size) {
+  .otb-hero .carousel-item { height: 480px; }
+  .otb-hero .otb-caption { padding-right: 100px; }
+  .otb-hero .otb-title { font-size: 80px; }
+  .otb-hero .otb-sub { font-size: 40px; }
+  .otb-hero .btn-otb { font-size: 40px; padding: 15px 25px; }
+  .otb-hero .otb-learn { font-size: 22px; }
+
+  @media (max-width: 991.98px) {
+    .otb-hero .carousel-item { height: 380px; }
+    .otb-hero .otb-caption { padding-right: 40px; }
+    .otb-hero .otb-title { font-size: 56px; }
+    .otb-hero .otb-sub { font-size: 28px; }
+    .otb-hero .btn-otb { font-size: 30px; padding: 12px 22px; }
+  }
+  @media (max-width: 575.98px) {
+    .otb-hero .carousel-item { height: 300px; }
+    .otb-hero .otb-caption { padding: 0 16px; align-items: center; text-align: center; }
+    .otb-hero .otb-title { font-size: 36px; }
+    .otb-hero .otb-sub { font-size: 20px; }
+    .otb-hero .btn-otb { font-size: 22px; padding: 10px 18px; }
+    .otb-hero .otb-learn { font-size: 17px; }
+  }
+}
+
+/* ---- Caption motion ----
+   Entrance ("sfl"): slide in from left, 400ms, Power4.easeOut.
+   RS data-start is measured from the start of the slide change (1000/1300/1600/1700ms). Bootstrap adds
+   .active when the 1s fade ENDS, so the delays here are data-start minus 1000ms. */
+@keyframes otbSlideFromLeft {
+  from { opacity: 0; transform: translateX(-80px); }
+  to   { opacity: 1; transform: none; }
+}
+/* Exit ("fadeout"): data-endspeed 300 (title) / 400 (others), Power1.easeIn */
+@keyframes otbFadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+.otb-hero .otb-caption > * { opacity: 0; }
+.otb-hero .carousel-item.active .otb-caption > * {
+  animation: otbSlideFromLeft .4s cubic-bezier(.165,.84,.44,1) forwards;
+}
+.otb-hero .carousel-item.active .otb-caption > :nth-child(1) { animation-delay: 0s; }
+.otb-hero .carousel-item.active .otb-caption > :nth-child(2) { animation-delay: .3s; }
+.otb-hero .carousel-item.active .otb-caption > :nth-child(3) { animation-delay: .6s; }
+.otb-hero .carousel-item.active .otb-caption > :nth-child(4) { animation-delay: .7s; }
+
+/* Outgoing slide = still .active, plus .carousel-item-start/-end for the duration of the fade */
+.otb-hero.carousel .carousel-item.active.carousel-item-start .otb-caption > *,
+.otb-hero.carousel .carousel-item.active.carousel-item-end .otb-caption > * {
+  animation: otbFadeOut .4s cubic-bezier(.55,.085,.68,.53) 0s forwards;
+}
+.otb-hero.carousel .carousel-item.active.carousel-item-start .otb-caption > :nth-child(1),
+.otb-hero.carousel .carousel-item.active.carousel-item-end .otb-caption > :nth-child(1) {
+  animation-duration: .3s;
+}
+
+/* Deliberate deviation: slide 1's text is visible on first paint (RS animates it in ~1s after init) */
+.otb-hero .carousel-item.otb-first.active .otb-caption > * { animation: none; opacity: 1; }
+
+/* ---- Navigation chrome: same sprites as production, visible only while hovered (hideThumbs:10) ---- */
+.otb-hero .carousel-control-prev,
+.otb-hero .carousel-control-next {
+  width: 40px; height: 40px; top: 50%; transform: translateY(-50%);
+  opacity: 0; transition: opacity .2s ease-out;
+  background: no-repeat 0 0; border: 0;
+}
+.otb-hero .carousel-control-prev { left: 20px;  background-image: url("https://img2.offtrackbetting.com/images/rs_assets/large_left.png"); }
+.otb-hero .carousel-control-next { right: 20px; background-image: url("https://img2.offtrackbetting.com/images/rs_assets/large_right.png"); }
+.otb-hero .carousel-control-prev:hover,
+.otb-hero .carousel-control-next:hover { background-position: 0 -40px; }
+
+.otb-hero .carousel-indicators {
+  margin-bottom: 20px; opacity: 0; transition: opacity .2s ease-out;
+}
+.otb-hero .carousel-indicators [data-bs-target] {
+  width: 20px; height: 20px; margin: 0; padding: 0; border: 0; opacity: 1; text-indent: 0;
+  background: url("https://img2.offtrackbetting.com/images/slider/bullet.png") no-repeat 0 0;
+}
+.otb-hero .carousel-indicators .active,
+.otb-hero .carousel-indicators [data-bs-target]:hover { background-position: 0 100%; }
+
+.otb-hero:hover .carousel-control-prev, .otb-hero:hover .carousel-control-next, .otb-hero:hover .carousel-indicators,
+.otb-hero:focus-within .carousel-control-prev, .otb-hero:focus-within .carousel-control-next,
+.otb-hero:focus-within .carousel-indicators { opacity: 1; }
+
+/* hideBulletsOnMobile / hideArrowsOnMobile: touch devices swipe instead */
+@media (hover: none) {
+  .otb-hero .carousel-control-prev, .otb-hero .carousel-control-next, .otb-hero .carousel-indicators { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .otb-hero .carousel-item.active .otb-caption > *,
+  .otb-hero.carousel .carousel-item.active.carousel-item-start .otb-caption > *,
+  .otb-hero.carousel .carousel-item.active.carousel-item-end .otb-caption > * { animation: none; opacity: 1; }
+}

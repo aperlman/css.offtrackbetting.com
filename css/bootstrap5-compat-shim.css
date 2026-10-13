@@ -1,0 +1,79 @@
+/* Bootstrap 3/4 class compatibility shim for the Bootstrap 5 cutover.
+   Restores classes Bootstrap 5 removed/renamed so the ~450 not-yet-migrated
+   legacy pages keep their prior appearance. Load after bootstrap5*.min.css.
+   Remove each rule once every page using that class has been bulk-renamed
+   to the native Bootstrap 5 equivalent (see bootstrap5-upgrade-decisions.md,
+   "trailing cleanup"). */
+
+/* style.css (shared with live BS3 production, deployed separately via the
+   css.offtrackbetting.com S3 sync) has `.row{margin-left:auto;margin-right:auto}`
+   at the same specificity as Bootstrap 5's own .row rule, loaded later in the
+   cascade, so it wins and collapses every nested .row to zero width under
+   flex. Restoring BS5's real gutter margins here (not by editing style.css
+   itself) via a doubled-class selector bump in specificity, so this only
+   applies on already-migrated pages/templates, independent of when the CSS
+   repo happens to sync live. */
+.row.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+/* style.css also has a broad `ul li{list-style-type:disc}` that sets the
+   property directly on every <li>, which beats the `list-style:none`
+   Bootstrap 5 sets on the *parent* <ul> of its no-bullet components
+   (.nav/.navbar-nav/.pagination/.breadcrumb/.list-unstyled/.list-inline/
+   .dropdown-menu) -- a direct declaration always beats inheritance,
+   regardless of selector specificity. Same bug class as the pagination
+   and results day-archive bullet fixes; this covers every other BS5
+   no-bullet component site-wide (e.g. homepage feature tabs) instead of
+   patching one component at a time. */
+.nav > li, .navbar-nav > li, .pagination > li, .breadcrumb > li,
+.list-unstyled li, .list-inline li, .dropdown-menu > li {
+  list-style: none;
+}
+
+/* style.css also has `hr{clear:both;float:left;width:100%}` (a legacy rule
+   that was harmless under BS3, since BS3's .pagination isn't a block
+   formatting context). BS5's `.pagination{display:flex}` DOES establish a
+   new BFC, and a BFC-establishing block with width:auto placed after an
+   uncleared, full-width floated <hr> gets sized via shrink-to-fit against
+   the *available* width at that line -- which is 0, since the float spans
+   the entire container. Result: the whole pagination bar collapses to 0px
+   and its flex children (nowrap) visibly overflow into whatever sits next
+   to the column (e.g. horse_betting_news's right-col sidebar). `clear:both`
+   here makes it render below the float instead of beside it, same fix as
+   a classic "clearfix", without touching style.css's shared hr rule. */
+.pagination {
+  clear: both;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pull-left { float: left !important; }
+.pull-right { float: right !important; }
+
+.visible-xs { display: none !important; }
+@media (max-width: 767.98px) {
+  .hidden-xs { display: none !important; }
+  .visible-xs { display: block !important; }
+}

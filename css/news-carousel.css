@@ -1,0 +1,8 @@
+/* "Horse Betting News" carousel card styling — Bootstrap 5 Carousel grouped-card
+   cards, replaces jcarousel. See tmp/phase-out-jquery/bootstrap5-upgrade-decisions.md
+   item 1 (Option A) and tmp/phase-out-jquery/demo-bs5-news-carousel.html. */
+#news-headlines-carousels .news-card { height: 100%; }
+#news-headlines-carousels .news-card img { height: 160px; object-fit: cover; }
+#news-headlines-carousels .carousel-item .row { row-gap: 1rem; }
+#news-headlines-carousels .carousel-control-prev,
+#news-headlines-carousels .carousel-control-next { width: 6%; }

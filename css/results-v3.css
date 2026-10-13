@@ -1,0 +1,365 @@
+/* Mobile card layout + live MTP banner for the per-track race-day page
+   (race-v3.js). Desktop table styling/colors are untouched, still owned by
+   the separate css.offtrackbetting.com/css/results-v2.css. The saddle-cloth
+   color VALUES below are duplicated from that file (not redefined) because
+   its selectors require "table tr td.ppN a" ancestry and don't match this
+   card markup -- see results-v2.css for the canonical table version. */
+
+#race .selection-card {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  border: 1px solid #e9ecef;
+  border-radius: .5rem;
+  padding: .65rem .8rem;
+  margin-bottom: .5rem;
+}
+#race .selection-card.winner {
+  border-color: #870000;
+  background: #fff7f7;
+}
+#race .selection-card .names { flex: 1 1 auto; min-width: 0; }
+#race .selection-card .horse-name { font-weight: 700; }
+#race .selection-card .jockey { font-size: .8rem; color: #6c757d; }
+#race .selection-card .amounts { text-align: right; font-size: .85rem; white-space: nowrap; }
+
+#race .selection-card .pp-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+  flex-shrink: 0;
+  color: white;
+}
+#race .selection-card .pp-chip a { color: inherit; text-decoration: none; }
+
+/* thoroughbred/quarter horse colors (results-v2.css "pp1".."pp24") */
+#race .selection-card .pp1 { background-color: #870000; }
+#race .selection-card .pp2 { background-color: white; color: black; }
+#race .selection-card .pp3 { background-color: #014282; }
+#race .selection-card .pp4 { background-color: #ffdd00; color: black; }
+#race .selection-card .pp5 { background-color: #01803d; }
+#race .selection-card .pp6 { background-color: black; color: #ffdd00; }
+#race .selection-card .pp7 { background-color: #dc7d29; color: black; }
+#race .selection-card .pp8 { background-color: #f387b8; color: black; }
+#race .selection-card .pp9 { background-color: #00bae0; color: black; }
+#race .selection-card .pp10 { background-color: #330066; }
+#race .selection-card .pp11 { background-color: #b2b7bb; color: red; }
+#race .selection-card .pp12 { background-color: #8dc73f; color: black; }
+#race .selection-card .pp13 { background-color: #54301a; }
+#race .selection-card .pp14 { background-color: #8a2529; color: #ffdd00; }
+#race .selection-card .pp15 { background-color: #c5c19e; color: black; }
+#race .selection-card .pp16 { background-color: #749dd3; color: black; }
+#race .selection-card .pp17 { background-color: #002f5d; }
+#race .selection-card .pp18 { background-color: #024a1a; color: #ffdd00; }
+#race .selection-card .pp19 { background-color: #007db8; color: black; }
+#race .selection-card .pp20 { background-color: #ed008c; color: yellow; }
+#race .selection-card .pp21 { background-color: #c5b4e3; color: #000099; }
+#race .selection-card .pp22 { background-color: #3f526f; color: white; }
+#race .selection-card .pp23 { background-color: #9abeaa; color: #006600; }
+#race .selection-card .pp24 { background-color: #3e4827; color: white; }
+#race .selection-card .ppAE { background-color: none; color: black; }
+
+/* harness colors (results-v2.css "hpp1".."hpp11", shares pp12-pp24/AE above) */
+#race .selection-card .hpp1 { background-color: #870000; }
+#race .selection-card .hpp2 { background-color: #014282; }
+#race .selection-card .hpp3 { background-color: white; color: black; }
+#race .selection-card .hpp4 { background-color: #01803d; }
+#race .selection-card .hpp5 { background-color: black; }
+#race .selection-card .hpp6 { background-color: #ffdd00; color: black; }
+#race .selection-card .hpp7 { background-color: #f387b8; color: black; }
+#race .selection-card .hpp8 { background-color: rgb(107, 107, 107); }
+#race .selection-card .hpp9 { background-color: #330066; }
+#race .selection-card .hpp10 { background-color: rgb(38, 61, 136); }
+#race .selection-card .hpp11 { background-color: #00bae0; }
+#race .selection-card .hpp12 { background-color: #8dc73f; color: black; }
+#race .selection-card .hpp13 { background-color: #54301a; }
+#race .selection-card .hpp14 { background-color: #8a2529; color: #ffdd00; }
+#race .selection-card .hpp15 { background-color: #c5c19e; color: black; }
+#race .selection-card .hpp16 { background-color: #749dd3; color: black; }
+#race .selection-card .hpp17 { background-color: #002f5d; }
+#race .selection-card .hpp18 { background-color: #024a1a; color: #ffdd00; }
+#race .selection-card .hpp19 { background-color: #007db8; color: black; }
+#race .selection-card .hpp20 { background-color: #ed008c; color: yellow; }
+#race .selection-card .hpp21 { background-color: #c5b4e3; color: #000099; }
+#race .selection-card .hpp22 { background-color: #3f526f; color: white; }
+#race .selection-card .hpp23 { background-color: #9abeaa; color: #006600; }
+#race .selection-card .hpp24 { background-color: #3e4827; color: white; }
+#race .selection-card .hppAE { background-color: none; color: black; }
+
+/* live "next race" MTP banner */
+#liveMtpBanner.cta-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
+  background: #870000;
+  color: #fff;
+  border-radius: .5rem;
+  padding: .6rem .9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+#liveMtpBanner .btn {
+  background: #fff;
+  color: #870000;
+  border: 0;
+  font-weight: 700;
+}
+#liveMtpBanner .btn:hover { background: #ffe9e9; color: #870000; }
+
+/* Race layout, ported from tmp/phase-out-jquery/results-form/copilot-concept
+   (app.css) -- race-jump nav, colored per-race header, exotics list,
+   pending-note. All data/markup driving these comes from the real,
+   proven race-v3.js extraction logic, not the prototype's. */
+#race .race-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#race .race-jump a {
+  border: 1px solid #ced4da;
+  border-radius: .4rem;
+  padding: .25rem .6rem;
+  font-size: .85rem;
+  font-weight: 600;
+  color: #212529;
+  text-decoration: none;
+}
+#race .race-jump a.official { border-color: #13294b; color: #13294b; }
+#race .race-jump a:hover { background: #f2f5fa; }
+#race .race-jump a.next-up { border-color: #870000; background: #fff5f5; color: #870000; }
+#race .race-jump a.next-up::before {
+  content: ""; display: inline-block; width: 6px; height: 6px;
+  border-radius: 50%; background: #870000; margin-right: 4px; vertical-align: middle;
+}
+
+#race .race-section {
+  border: 1px solid #e9ecef;
+  border-radius: .6rem;
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  scroll-margin-top: 70px;
+}
+#race .race-section.next-up { box-shadow: 0 0 0 2px #870000; }
+#race .race-section .race-head {
+  background: #13294b;
+  color: #fff;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
+  padding: .5rem .9rem;
+}
+#race .race-section.next-up .race-head { background: #870000; }
+#race .race-section .race-head h2 { font-size: 1.1rem; font-weight: 700; margin: 0; color: inherit; }
+#race .race-section .race-meta { font-size: .82rem; opacity: .9; }
+#race .race-section .race-body { padding: .85rem 1.1rem 1rem; }
+#race .race-section details.cond {
+  font-size: .85rem;
+  color: #495057;
+  margin: 0 0 .75rem;
+}
+#race .race-section details.cond summary { cursor: pointer; color: #13294b; font-weight: 600; }
+
+#race .res-table th.amt, #race .res-table td.amt { text-align: right; white-space: nowrap; }
+#race .res-table tr.winner-row { background: #fff7f7; }
+
+#race .exotics {
+  list-style: none;
+  padding: 0;
+  margin: .75rem 0 0;
+  font-size: .88rem;
+}
+#race .exotics li {
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+  padding: .3rem 0;
+  border-bottom: 1px dashed #e9ecef;
+}
+#race .exotics li:last-child { border-bottom: none; }
+#race .exotics .bt { color: #13294b; font-weight: 600; }
+#race .exotics .pay { font-weight: 700; }
+
+#race .pending-note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
+  background: #f8f9fa;
+  border-radius: .4rem;
+  padding: .6rem .8rem;
+  margin-top: .5rem;
+  font-size: .88rem;
+}
+#race .pending-note.next-up { background: #fff5f5; }
+#race .pending-note.next-up span { font-weight: 700; color: #870000; }
+
+/* Day navigation bar + calendar popover + year/month archive, ported from
+   tmp/phase-out-jquery/results-form/rewrite-form (track.html's ".daybar"
+   and "#archive"), not sticky per team decision. Both the popover and the
+   archive are built client-side (day-nav-v3.js) from the #otb-valid-days
+   JSON pagination.tt2 already embeds -- no extra fetch. */
+#dayNav {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+  padding: .6rem .75rem;
+  margin: .5rem 0 1rem;
+  border: 1px solid #e9ecef;
+  border-radius: .5rem;
+  background: #fff;
+}
+#dayNav .day-nav-prev, #dayNav .day-nav-next { flex: 0 0 auto; }
+#dayNav .day-nav-prev a, #dayNav .day-nav-next a {
+  display: inline-block;
+  padding: .4rem .7rem;
+  border: 1px solid #ced4da;
+  border-radius: .4rem;
+  font-weight: 600;
+  font-size: .85rem;
+  color: #212529;
+  text-decoration: none;
+  white-space: nowrap;
+}
+#dayNav .day-nav-prev a:hover, #dayNav .day-nav-next a:hover { background: #f2f5fa; border-color: #13294b; }
+#dayNav .day-nav-disabled { display: inline-block; padding: .4rem .7rem; color: #c4c8cd; }
+#dayNav .day-nav-cur {
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  min-width: 0;
+}
+#dayNav .day-nav-date-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  border: 1px solid #13294b;
+  background: #13294b;
+  color: #fff;
+  font-weight: 700;
+  font-size: .9rem;
+  padding: .4rem .8rem;
+  border-radius: .4rem;
+}
+#dayNav .day-nav-date-btn:hover, #dayNav .day-nav-date-btn[aria-expanded="true"] { background: #1d3a66; }
+#dayNav .day-nav-latest-pill {
+  font-size: .78rem;
+  font-weight: 700;
+  color: #870000;
+  border: 1px solid #870000;
+  border-radius: 1rem;
+  padding: .15rem .6rem;
+}
+#dayNav .day-nav-latest {
+  font-size: .85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+#dayNav .day-nav-all { flex: 0 0 auto; font-size: .85rem; font-weight: 600; white-space: nowrap; }
+
+#dayNav .day-nav-cal-pop {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  width: 290px;
+  max-width: 90vw;
+  padding: .75rem;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: .5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+#dayNav .day-nav-cal-pop[hidden] { display: none; }
+
+.mini-cal { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; text-align: center; }
+.mini-cal .dow { font-size: .7rem; font-weight: 700; color: #6c757d; padding: .2rem 0; }
+.mini-cal .cell { padding: .35rem 0; border-radius: .3rem; font-size: .85rem; text-decoration: none; color: #212529; }
+.mini-cal a.cell { background: #f8f9fa; }
+.mini-cal a.cell:hover { background: #f2f5fa; outline: 1px solid #13294b; }
+.mini-cal a.cell.is-latest { color: #870000; font-weight: 700; }
+.mini-cal a.cell.is-sel { background: #13294b; color: #fff; font-weight: 700; }
+.mini-cal .cell.no-race { color: #c4c8cd; }
+.mini-cal .cell.empty { visibility: hidden; }
+
+#dayArchive { margin: 1.5rem 0; scroll-margin-top: 70px; }
+#dayArchive details.year { scroll-margin-top: 70px; }
+#dayArchive .day-archive-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: .5rem;
+}
+#dayArchive .day-archive-head h2 { font-size: 1.1rem; font-weight: 700; margin: 0; }
+#dayArchive .year-nav { display: flex; gap: 4px; flex-wrap: wrap; }
+#dayArchive .year-nav a {
+  padding: .3rem .6rem;
+  border-radius: .4rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .85rem;
+  border: 1px solid transparent;
+  color: #212529;
+}
+#dayArchive .year-nav a[aria-current="true"] { background: #13294b; color: #fff; }
+#dayArchive .year-nav a:not([aria-current="true"]):hover { border-color: #ced4da; }
+#dayArchive details.year { border-top: 1px solid #e9ecef; }
+#dayArchive details.year > summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: .6rem 0;
+  list-style: none;
+}
+#dayArchive details.year > summary::-webkit-details-marker { display: none; }
+#dayArchive .day-archive-month { padding: .6rem 0; border-top: 1px solid #f1f3f5; }
+#dayArchive .day-archive-month:first-of-type { border-top: 0; }
+#dayArchive .day-archive-month h3 { font-size: .9rem; font-weight: 700; margin: 0 0 .5rem; }
+#dayArchive .day-archive-days { display: flex; flex-wrap: wrap; gap: .4rem; list-style: none; padding: 0; margin: 0; }
+#dayArchive .day-archive-days li { list-style: none; margin-bottom: 0; }
+#dayArchive .day-archive-days a {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 48px;
+  padding: .3rem .5rem;
+  border: 1px solid #d8dde3;
+  border-radius: .4rem;
+  text-decoration: none;
+  color: #212529;
+  line-height: 1.1;
+}
+#dayArchive .day-archive-days a:hover { border-color: #13294b; background: #f2f5fa; }
+#dayArchive .day-archive-days a .dow { font-size: .65rem; text-transform: uppercase; color: #6c757d; }
+#dayArchive .day-archive-days a .dd { font-size: 1rem; font-weight: 700; }
+#dayArchive .day-archive-days a.is-latest { border-color: #870000; }
+#dayArchive .day-archive-days a.is-latest .dow { color: #870000; }
+#dayArchive .day-archive-days a.is-sel { background: #13294b; border-color: #13294b; color: #fff; }
+#dayArchive .day-archive-days a.is-sel .dow { color: #cfe0ff; }
+
+@media (max-width: 575.98px) {
+  #dayNav .day-nav-prev .lbl, #dayNav .day-nav-next .lbl { display: none; }
+  #dayNav .day-nav-all { display: none; }
+}
+

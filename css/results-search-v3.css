@@ -1,0 +1,185 @@
+/* Results search/discovery UI — Bootstrap 5, ported from the reviewed
+   prototype (tmp/phase-out-jquery/results-form/copilot-concept/app.css).
+   Stage 1 only: search-first track list + date panel. Race-day page
+   styles (selection cards, saddle-cloth colors, exotics, etc.) are a
+   separate Stage 2 file, not included here. */
+.results-search .search-card {
+  border: none;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
+}
+
+.results-search .track-search-wrap { position: relative; }
+.results-search .track-search-wrap .search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+  pointer-events: none;
+}
+.results-search #trackSearch { padding-left: 2.4rem; height: 3rem; font-size: 1.05rem; }
+
+.results-search .filter-chip {
+  border: 1px solid #ced4da;
+  background: #fff;
+  border-radius: 999px;
+  padding: .3rem .85rem;
+  font-size: .85rem;
+  color: #495057;
+}
+.results-search .filter-chip.active {
+  background: var(--otb-navy, #13294b);
+  border-color: var(--otb-navy, #13294b);
+  color: #fff;
+}
+
+.results-search .region-heading {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: #6c757d;
+  font-weight: 700;
+}
+.results-search .region-heading.today-heading { color: var(--otb-red, #870000); }
+
+.results-search .track-row {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: .5rem;
+  padding: 0 .5rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  margin-bottom: .4rem;
+}
+.results-search .track-row:hover { border-color: #adb5bd; }
+.results-search .track-row.is-open {
+  border-color: var(--otb-navy, #13294b);
+  background: #f2f5fa;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 0;
+}
+
+.results-search .track-row-btn {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-align: left;
+  background: none;
+  border: 0;
+  padding: .6rem .9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+}
+
+.results-search .track-row-cta { flex-shrink: 0; white-space: nowrap; }
+
+.results-search .track-row .track-name { font-weight: 600; color: #212529; }
+.results-search .track-row .track-name small { font-weight: 400; color: #868e96; margin-left: .35rem; }
+.results-search .track-row .track-meta { display: flex; align-items: center; gap: .5rem; font-size: .8rem; white-space: nowrap; }
+
+.results-search .badge-today {
+  background: var(--otb-red, #870000);
+  color: #fff;
+  font-weight: 600;
+}
+.results-search .badge-mtp-off { background: #6c757d; color: #fff; }
+
+.results-search .no-match { color: #868e96; padding: 1rem 0; }
+
+.results-search .btn-otb {
+  background: var(--otb-red, #870000);
+  border-color: var(--otb-red, #870000);
+  color: #fff;
+}
+.results-search .btn-otb:hover {
+  background: var(--otb-red-hover, #a30000);
+  border-color: var(--otb-red-hover, #a30000);
+  color: #fff;
+}
+
+/* Date panel (appears directly under an expanded track row) */
+.results-search .date-panel {
+  border: 1px solid var(--otb-navy, #13294b);
+  border-top: none;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: .75rem;
+}
+.results-search .date-panel .last-raced { font-size: .85rem; color: #495057; margin-bottom: .6rem; }
+
+.results-search .day-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin-bottom: .75rem;
+}
+.results-search .day-chip {
+  border: 1px solid #ced4da;
+  background: #fff;
+  border-radius: .4rem;
+  padding: .3rem .6rem;
+  font-size: .82rem;
+  color: #212529;
+}
+.results-search .day-chip:hover { border-color: var(--otb-navy, #13294b); }
+.results-search .day-chip.latest {
+  background: var(--otb-navy, #13294b);
+  border-color: var(--otb-navy, #13294b);
+  color: #fff;
+  font-weight: 600;
+}
+
+.results-search .no-snapshot-note {
+  font-size: .85rem;
+  color: #856404;
+  background: #fff8e1;
+  border: 1px solid #ffe69c;
+  border-radius: .4rem;
+  padding: .55rem .75rem;
+  margin-bottom: .75rem;
+}
+
+.results-search .more-dates-panel {
+  border-top: 1px dashed #dee2e6;
+  padding-top: .75rem;
+  margin-top: .25rem;
+}
+
+.results-search .mini-cal {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+  max-width: 320px;
+}
+.results-search .mini-cal .dow {
+  font-size: .68rem;
+  text-align: center;
+  color: #adb5bd;
+  font-weight: 700;
+}
+.results-search .mini-cal .cell {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .78rem;
+  border-radius: .3rem;
+  border: 1px solid transparent;
+}
+.results-search .mini-cal .cell.race-day {
+  background: #eef3fb;
+  border-color: #c8d7ec;
+  color: var(--otb-navy, #13294b);
+  font-weight: 700;
+  cursor: pointer;
+}
+.results-search .mini-cal .cell.race-day:hover { background: var(--otb-navy, #13294b); color: #fff; }
+.results-search .mini-cal .cell.empty { visibility: hidden; }
+.results-search .mini-cal .cell.no-race { color: #dee2e6; }
