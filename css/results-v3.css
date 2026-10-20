@@ -5,6 +5,24 @@
    its selectors require "table tr td.ppN a" ancestry and don't match this
    card markup -- see results-v2.css for the canonical table version. */
 
+/* ACTION */
+#race #actionbox {
+  padding: 10px;
+  margin-bottom: 0px;
+  background-color: rgb(230, 230, 230); 
+  color: black; 
+  border: 1px solid rgb(111, 111, 111); 
+  border-bottom-right-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+  font-size: 1.125rem;
+}
+
+.btn-sm {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+}
+
 #race .selection-card {
   display: flex;
   align-items: center;
@@ -21,7 +39,7 @@
 #race .selection-card .names { flex: 1 1 auto; min-width: 0; }
 #race .selection-card .horse-name { font-weight: 700; }
 #race .selection-card .jockey { font-size: .8rem; color: #6c757d; }
-#race .selection-card .amounts { text-align: right; font-size: .85rem; white-space: nowrap; }
+#race .selection-card .amounts { text-align: right; font-size: 1rem; white-space: nowrap; }
 
 #race .selection-card .pp-chip {
   display: flex;
@@ -100,13 +118,13 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: .5rem;
-  background: #870000;
-  color: #fff;
+  background: #e6e6e6;
+  color: black;
   border-radius: .5rem;
   padding: .6rem .9rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 #liveMtpBanner .btn {
   background: #fff;
@@ -120,14 +138,24 @@
    (app.css) -- race-jump nav, colored per-race header, exotics list,
    pending-note. All data/markup driving these comes from the real,
    proven race-v3.js extraction logic, not the prototype's. */
-#race .race-jump {
+#resultsControls {
+  display: grid;
+  gap: .5rem;
+  padding: .75rem;
+  margin: .5rem 0 1rem;
+  border: 1px solid #ced4da;
+  border-radius: .5rem;
+  background: #f8f9fa;
+}
+#resultsControls #dayNav,
+#resultsControls #liveMtpBanner.cta-banner,
+#resultsControls .race-jump { margin: 0; }
+#resultsControls .race-jump {
   display: flex;
   flex-wrap: wrap;
   gap: .4rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
-#race .race-jump a {
+#resultsControls .race-jump a {
   border: 1px solid #ced4da;
   border-radius: .4rem;
   padding: .25rem .6rem;
@@ -136,13 +164,14 @@
   color: #212529;
   text-decoration: none;
 }
-#race .race-jump a.official { border-color: #13294b; color: #13294b; }
-#race .race-jump a:hover { background: #f2f5fa; }
-#race .race-jump a.next-up { border-color: #870000; background: #fff5f5; color: #870000; }
-#race .race-jump a.next-up::before {
+#resultsControls .race-jump a.official { border-color: #13294b; color: #13294b; }
+#resultsControls .race-jump a:hover { background: #f2f5fa; }
+#resultsControls .race-jump a.next-up { border-color: black; background: #dbe9ff; color: black; }
+#resultsControls .race-jump a.next-up::before {
   content: ""; display: inline-block; width: 6px; height: 6px;
-  border-radius: 50%; background: #870000; margin-right: 4px; vertical-align: middle;
+  border-radius: 50%; background: black; margin-right: 4px; vertical-align: middle;
 }
+#resultsControls .race-jump a.next-up:hover { background: #bdd7ff; }
 
 #race .race-section {
   border: 1px solid #e9ecef;
@@ -152,9 +181,9 @@
   margin-bottom: 1.25rem;
   scroll-margin-top: 70px;
 }
-#race .race-section.next-up { box-shadow: 0 0 0 2px #870000; }
+/* #race .race-section.next-up { box-shadow: 0 0 0 2px #870000; } */
 #race .race-section .race-head {
-  background: #13294b;
+  background: #870000; /* #13294b; */
   color: #fff;
   display: flex;
   align-items: baseline;
@@ -164,35 +193,31 @@
   padding: .5rem .9rem;
 }
 #race .race-section.next-up .race-head { background: #870000; }
-#race .race-section .race-head h2 { font-size: 1.1rem; font-weight: 700; margin: 0; color: inherit; }
-#race .race-section .race-meta { font-size: .82rem; opacity: .9; }
-#race .race-section .race-body { padding: .85rem 1.1rem 1rem; }
-#race .race-section details.cond {
+#race .race-section .race-head h2 { font-size: 1.6rem; font-weight: 700; margin: 0; color: inherit; }
+#race .race-section .race-meta { font-size: .9rem; } /* { font-size: .82rem; opacity: .9; } */
+/* #race .race-section .race-body { padding: .85rem 1.1rem 1rem; } */
+/* #race .race-section details.cond {
   font-size: .85rem;
   color: #495057;
   margin: 0 0 .75rem;
+} */
+#race .race-section details.cond {
+  font-size: .85rem;
+  color: white;
+  background: #003158;
 }
-#race .race-section details.cond summary { cursor: pointer; color: #13294b; font-weight: 600; }
+/* #race .race-section details.cond summary { cursor: pointer; color: #13294b; font-weight: 600; } */
+#race .race-section details.cond summary { cursor: pointer; color: white; font-weight: 600; padding: 5px; margin-left:10px; }
+#race .race-section details.cond p {padding:0px 5px 5px 0px; margin-top: 0px !important; margin-left:10px !important;}
 
-#race .res-table th.amt, #race .res-table td.amt { text-align: right; white-space: nowrap; }
+#race .res-table th.amt, #race .res-table td.amt { text-align: center; white-space: nowrap; }
 #race .res-table tr.winner-row { background: #fff7f7; }
 
-#race .exotics {
-  list-style: none;
-  padding: 0;
-  margin: .75rem 0 0;
-  font-size: .88rem;
-}
-#race .exotics li {
-  display: flex;
-  justify-content: space-between;
-  gap: .5rem;
-  padding: .3rem 0;
-  border-bottom: 1px dashed #e9ecef;
-}
-#race .exotics li:last-child { border-bottom: none; }
-#race .exotics .bt { color: #13294b; font-weight: 600; }
-#race .exotics .pay { font-weight: 700; }
+#race #dividends { margin-top: .75rem; }
+#race .exotics-table { font-size: .88rem; }
+#race .exotics-table thead th { background: #003158; color: #fff; }
+#race .exotics-table th:last-child,
+#race .exotics-table td:last-child { text-align: right; white-space: nowrap; }
 
 #race .pending-note {
   display: flex;
@@ -361,5 +386,9 @@
 @media (max-width: 575.98px) {
   #dayNav .day-nav-prev .lbl, #dayNav .day-nav-next .lbl { display: none; }
   #dayNav .day-nav-all { display: none; }
+  #race .race-section details.cond {
+    margin-bottom: .75rem;
+    border-bottom-right-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+  }
 }
-

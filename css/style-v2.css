@@ -28,7 +28,7 @@
    Also carries the homepage typography bumps requested by design
    (search "redesign:" below for each changed value, with the original
    style.css value noted). */
-body{color:#444;font-size:1em;line-height:1.4em;font-family:"adelle-sans", Trebuchet MS1, Trebuchet MS, sans-serif;}
+body{color:#444;font-size:1rem;line-height:1.4rem;font-family:"adelle-sans", Trebuchet MS1, Trebuchet MS, sans-serif;} /* redesign: default/base font size, was 1em (16px); now 18px. Anything on the page without its own font-size inherits this. */
 p, li{line-height:1.6em;}
 p{margin-bottom:1.7em;}
 a, a:focus, a:hover, a:active{outline:0 !important;color:#1b5f95;font-weight:normal;text-decoration:none;}
@@ -42,6 +42,7 @@ h3{font-size:26px;}
 h3:first-of-type{}
 dt{margin:1em 0 .385em;line-height:1.6em;}
 dd{line-height:1.6em;margin-left:0 !important;}
+ul li{margin-bottom:5px;}
 ul:not(.nav):not(.navbar-nav):not(.pagination):not(.breadcrumb):not(.list-unstyled):not(.list-inline):not(.dropdown-menu) li{list-style-type:disc;list-style-position:outside;margin-bottom:5px;}
 hr{clear:both;width:100%;border-style:dotted;border-color:#b3bbbb;}
 .container{margin:0 auto;width:100%;max-width:1920px;height:auto;padding:0 25px 0 25px;}
@@ -141,7 +142,7 @@ iframe.video.wide{min-height:430px;}
 .btn-red:active, .btn-red.active, .btn-red.active:hover, .btn-red.disabled:hover, .btn-red.disabled:focus, .btn-red.disabled:active, .btn-red.disabled.active{background:#ac2323;border:0;}
 .btn-join{border:1px solid #72021c;-webkit-border-radius:.3em;-moz-border-radius:.3em;border-radius:.3em;padding:10px;text-shadow:3px 3px 0 rgba(0,0,0,0.3);font:bold 24px Arial,Helvetica,sans-serif;text-align:center;color:#FFF;background-color:#870000;background-image:-webkit-gradient(linear,left top,left bottom,from(#870000),to(#570000));background-image:-webkit-linear-gradient(top,#870000,#570000);background-image:-moz-linear-gradient(top,#870000,#570000);background-image:-ms-linear-gradient(top,#870000,#570000);background-image:-o-linear-gradient(top,#870000,#570000);background-image:linear-gradient(to bottom,#870000,#570000);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#870000,endColorstr=#570000);}
 .btn-join a,.btn-join a:visited{color:#FFF;}
-.btn-join:hover{border:1px solid #450111;text-decoration:none;background-image:none;}
+.btn-join:hover{border:1px solid #450111;text-decoration:none;background-image:none;color:#FFF;background-color:#870000} /* redsign: added color, background-color to override default BS5 higher specificity */
 .freepicksDisclaimer{font-style: italic; font-size: 0.8em;}
 #shareBar{padding:8px 0px 5px 0px;border-bottom:1px solid #C2C2C2;vertical-align:baseline;}
 .video-container{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;}
@@ -279,7 +280,7 @@ select{padding:5px;margin:0;-webkit-border-radius:4px;-moz-border-radius:4px;bor
 .tag-box-v5 span{color:#870000;font-size:22px;margin-bottom:0;}
 .tag-box-v6{background:#fafafa;border:solid 1px #eee;}
 .tag-box-v7{border:solid 1px #eee;border-bottom:solid 2px #870000;}
-blockquote{padding:0 20px;}
+blockquote{padding:0 20px; border-left: 5px solid #eee; margin: 0 0 20px;font-size:1.1rem;} /* redesign: added border-left, margin, font-size because BS5 removed them */
 blockquote p{font-size:16px;font-weight:200;line-height:1.6em;}
 blockquote:hover{border-left-color:#870000;-webkit-transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out;}
 blockquote.left{float:left;width:40%;margin-right:20px;overflow:hidden;}
@@ -297,12 +298,12 @@ table td.center, table th.center, table td.num{text-align:center;}
 .table caption{background:#003158;padding:3px 10px;font-size:12px;text-align:left;border:0;text-align:center;color:#fff;}
 .dateUpdated{font-size:12px;}
 .freepicks > tbody > tr th{background:#003158 !important;}
-.freepicks > tbody > tr > td, .gradedStakes_results > .table > tbody > tr > td{vertical-align:middle;}
+.freepicks > tbody > tr > td, .gradedStakes_results > .table > tbody > tr > td{vertical-align:middle; padding:10px;}
 .freepicks .race_cond{font:12px Arial,Verdana,sans-serif; color: #F9F9F9;}
 .freepicks .cond_cell{padding:3px 8px;}
 .freepicks .exotic_bets{font-family: "Courier New", Courier, monospace; font-size: 14px;}
 .freepick_bet_type {text-transform: uppercase; font-size: 25px; font-weight: bold;}
-table.table > thead > tr, table.table > thead > tr > td, table.table > thead > tr > th{background:#003158 !important;color:white;}
+table.table > thead > tr, table.table > thead > tr > td, table.table > thead > tr > th{background:#003158 !important;color:white; padding:10px;}
 #odds_preview {clear: both; text-align: center;}
 #odds_preview > #odds_preview_header {background-color:#003158; color: white; margin: 0px; padding: 15px 0px 10px; }
 #odds_preview h2, #odds_preview p {margin: 0px;}
@@ -323,7 +324,7 @@ table.table > thead > tr, table.table > thead > tr > td, table.table > thead > t
 .story dt{width:33%;float:left;overflow:hidden;margin:0 3% 0 0;}
 .story dt img{max-width:100%;width:100%;padding:0;}
 .story dd{margin:0 0 12px;overflow:hidden;}
-.story p{margin:0;font-size:17px;} /* redesign: was inherited ~16px (1em) */
+.story p{margin:0;} /* redesign: dropped the earlier explicit 17px override — now inherits the new 18px default body font-size above, same result without a separate hardcoded value */
 .story .news-title, .story h3, .story .article-title{font-family:"adelle-sans", Trebuchet MS1, Trebuchet MS, sans-serif;border:0;padding:0;margin:0 0 12px 0;font-size:18px;line-height:normal;display:inline;} /* redesign: was 16px */
 .story .news-title a, .story .blog-title a{}
 .story .news-date, .news-date, .blog-date{margin-top:6px;font-size:14px;color:#999;}
@@ -546,7 +547,7 @@ iframe.video.wide{min-height:170px;}
 #get-started .get-started-cards .circle-numbers .number#number-2{padding:32px 40px;}
 #get-started .get-started-cards .circle-numbers .number#number-3{padding:32px 41px;}
 #get-started .get-started-cards div.h2{color:#0b2265;font-size:30px;letter-spacing:.5px;margin:10px auto 0;} /* redesign: was 28px */
-#get-started .get-started-cards p.numbers-caption{color:#333;letter-spacing:.25px;margin:5px auto 0;font-size:17px;} /* redesign: was inherited ~16px (1em) */
+#get-started .get-started-cards p.numbers-caption{color:#333;letter-spacing:.25px;margin:5px auto 0;} /* redesign: dropped the earlier explicit 17px override — now inherits the new 18px default body font-size above, same result without a separate hardcoded value */
 .openAccount{background-color:#efefe7;border:1px #000 solid;font:bold 16px Arial;padding:2px;text-align:center;width:90%;margin:15px auto;}
 .openAccount h2, .openAccount a{font:700 26px "Roboto Condensed", Trebuchet MS1, Trebuchet MS, sans-serif;}
 *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
@@ -588,6 +589,7 @@ nav .level2{padding:0px 0px 12px;}
 nav .level2 li{margin:8px 0;}
 .b-home nav .level2 li{margin:0 0 8px;}
 nav .level2 a, nav .level2 span{display:block;padding:10px 0 10px 0.4em;line-height:1.4em;text-transform:none;color:#002b5b;font-size:1.1em;font-family:"Roboto Condensed", Helvetica, Arial, Verdana, sans-serif;border-bottom:1px solid #cfcfcf;}
+.nav-mobile nav ul.level2 a, .nav-mobile nav ul.level2 span{font-size:17.6px;line-height:24.64px;}
 nav .level2 span{color:#cfcfcf;background-color:#003158;}
 nav .level2 a.active{background-color:#003158;border-bottom:1px solid #cfcfcf;color:#ffffff;}
 nav .level2 a:hover{background-color:#870000;color:#ffffff;text-decoration:none;}

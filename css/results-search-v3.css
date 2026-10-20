@@ -3,9 +3,15 @@
    Stage 1 only: search-first track list + date panel. Race-day page
    styles (selection cards, saddle-cloth colors, exotics, etc.) are a
    separate Stage 2 file, not included here. */
+
+.results-search div.track-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
 .results-search .search-card {
   border: none;
   box-shadow: 0 1px 4px rgba(0,0,0,.08);
+  background-color: #d8d8d8;
 }
 
 .results-search .track-search-wrap { position: relative; }
@@ -45,14 +51,14 @@
 .results-search .track-row {
   width: 100%;
   background: #fff;
-  border: 1px solid #e9ecef;
+  border: 1px solid #c1c9d1;
   border-radius: .5rem;
   padding: 0 .5rem 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: .5rem;
-  margin-bottom: .4rem;
+  margin-bottom: .75rem;
 }
 .results-search .track-row:hover { border-color: #adb5bd; }
 .results-search .track-row.is-open {
@@ -78,16 +84,87 @@
 
 .results-search .track-row-cta { flex-shrink: 0; white-space: nowrap; }
 
+.results-search .track-race-link {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 .4rem;
+  text-decoration: none;
+}
+.results-search .track-race-link:hover .badge { text-decoration: underline; }
+.results-search .track-race-link:focus-visible {
+  outline: 2px solid var(--otb-navy, #13294b);
+  outline-offset: 2px;
+  border-radius: .25rem;
+}
+
 .results-search .track-row .track-name { font-weight: 600; color: #212529; }
 .results-search .track-row .track-name small { font-weight: 400; color: #868e96; margin-left: .35rem; }
 .results-search .track-row .track-meta { display: flex; align-items: center; gap: .5rem; font-size: .8rem; white-space: nowrap; }
 
 .results-search .badge-today {
-  background: var(--otb-red, #870000);
+  background: var(--otb-navy, #13294b);
   color: #fff;
   font-weight: 600;
+  font-size: .8rem;
 }
-.results-search .badge-mtp-off { background: #6c757d; color: #fff; }
+.results-search .badge-mtp-off { background: #6c757d; color: #fff; font-size: .8rem;}
+
+@media (max-width: 575.98px) {
+  .results-search .btn-group[aria-label="Filter by breed"] {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .5rem;
+  }
+
+  .results-search .btn-group[aria-label="Filter by breed"] > .filter-chip {
+    width: 100%;
+    min-height: 44px;
+    margin: 0;
+    border-radius: 999px;
+  }
+
+  .results-search .badge-today,
+  .results-search .badge-mtp-off {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 36px;
+    padding: 0 .75rem;
+  }
+
+  .results-search .track-row .track-row-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 44px;
+    background-color: transparent;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 4px,
+      var(--otb-red, #870000) 4px,
+      var(--otb-red, #870000) calc(100% - 4px),
+      transparent calc(100% - 4px)
+    );
+    border-color: transparent;
+  }
+
+  .results-search .track-row .track-row-cta:hover {
+    background-color: transparent;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 4px,
+      var(--otb-red-hover, #a30000) 4px,
+      var(--otb-red-hover, #a30000) calc(100% - 4px),
+      transparent calc(100% - 4px)
+    );
+    border-color: transparent;
+  }
+}
 
 .results-search .no-match { color: #868e96; padding: 1rem 0; }
 
@@ -95,6 +172,8 @@
   background: var(--otb-red, #870000);
   border-color: var(--otb-red, #870000);
   color: #fff;
+  font-size: 1rem;
+  text-transform:capitalize;
 }
 .results-search .btn-otb:hover {
   background: var(--otb-red-hover, #a30000);
