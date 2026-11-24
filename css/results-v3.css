@@ -299,7 +299,7 @@
   font-weight: 600;
   text-decoration: none;
 }
-#dayNav .day-nav-all { flex: 0 0 auto; font-size: .85rem; font-weight: 600; white-space: nowrap; }
+#dayNav .day-nav-all { flex: 0 0 auto; font-size: .85rem; font-weight: 600; white-space: nowrap; text-transform: capitalize;}
 
 #dayNav .day-nav-cal-pop {
   position: absolute;
@@ -350,7 +350,7 @@
 }
 #dayArchive .year-nav a[aria-current="true"] { background: #13294b; color: #fff; }
 #dayArchive .year-nav a:not([aria-current="true"]):hover { border-color: #ced4da; }
-#dayArchive details.year { border-top: 1px solid #e9ecef; }
+#dayArchive details.year { border-top: 1px solid #e9ecef; background-color: #f8f9fa; padding: .5rem;}
 #dayArchive details.year > summary {
   cursor: pointer;
   font-weight: 700;

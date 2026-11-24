@@ -44,7 +44,7 @@ dt{margin:1em 0 .385em;line-height:1.6em;}
 dd{line-height:1.6em;margin-left:0 !important;}
 ul li{margin-bottom:5px;}
 ul:not(.nav):not(.navbar-nav):not(.pagination):not(.breadcrumb):not(.list-unstyled):not(.list-inline):not(.dropdown-menu) li{list-style-type:disc;list-style-position:outside;margin-bottom:5px;}
-hr{clear:both;width:100%;border-style:dotted;border-color:#b3bbbb;}
+hr{clear:both;width:100%;border-style:dotted;border-color:#b3bbbb;opacity:1;}
 .container{margin:0 auto;width:100%;max-width:1920px;height:auto;padding:0 25px 0 25px;}
 #top .container{padding:0 20px;}
 iframe.video{width:100% !important;min-height:570px;}
@@ -140,6 +140,23 @@ iframe.video.wide{min-height:430px;}
 .btn-red{background:#870000;color:#fff;border:0;}
 .btn-red:hover, .btn-red:focus{color:#fff;background:#ac2323;text-decoration:none;}
 .btn-red:active, .btn-red.active, .btn-red.active:hover, .btn-red.disabled:hover, .btn-red.disabled:focus, .btn-red.disabled:active, .btn-red.disabled.active{background:#ac2323;border:0;}
+.todaysraces-post-cell{position:relative;padding-right:4rem!important;}
+#todaysraces_content>tr>td{padding-top:10px;padding-bottom:10px;}
+.todaysraces-bet-link{position:absolute;top:50%;right:4px;transform:translateY(-50%);display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:7px 0;border-radius:.25rem; background:linear-gradient(to bottom,transparent 7px,#003158 7px,#003158 calc(100% - 7px),transparent calc(100% - 7px));color:#fff;font-weight:700;text-decoration:none;vertical-align:middle; text-transform:capitalize;}
+.todaysraces-bet-link:hover,.todaysraces-bet-link:focus{background:linear-gradient(to bottom,transparent 7px,#0f4e80 7px,#0f4e80 calc(100% - 7px),transparent calc(100% - 7px));color:#fff;text-decoration:none;font-weight:700;}
+.todaysraces-bet-link:focus-visible{outline:2px solid #003158;outline-offset:2px;}
+@media (min-width:768px) and (max-width:991.98px){
+  #todaysraces .table-responsive{overflow:visible;}
+  #todaysraces table,#todaysraces thead,#todaysraces tbody{display:block;width:100%;}
+  #todaysraces thead tr{display:block;}
+  #todaysraces thead th:first-child{display:block;width:100%;}
+  #todaysraces thead th:last-child{display:none;}
+  #todaysraces_content>tr{display:table;width:100%;table-layout:fixed;}
+  #todaysraces_content>tr.todaysraces-track-row{display:grid;grid-template-columns:minmax(0,1fr);border-bottom:1px solid #dee2e6;}
+  #todaysraces_content>tr.todaysraces-track-row>td{display:block;width:100%;border:0;box-shadow:none;}
+  #todaysraces_content>tr.todaysraces-track-row>td:first-child{padding:8px 8px 0;}
+  #todaysraces_content>tr.todaysraces-track-row>td.todaysraces-post-cell{min-height:44px;padding:0 4rem 6px 8px!important;}
+}
 .btn-join{border:1px solid #72021c;-webkit-border-radius:.3em;-moz-border-radius:.3em;border-radius:.3em;padding:10px;text-shadow:3px 3px 0 rgba(0,0,0,0.3);font:bold 24px Arial,Helvetica,sans-serif;text-align:center;color:#FFF;background-color:#870000;background-image:-webkit-gradient(linear,left top,left bottom,from(#870000),to(#570000));background-image:-webkit-linear-gradient(top,#870000,#570000);background-image:-moz-linear-gradient(top,#870000,#570000);background-image:-ms-linear-gradient(top,#870000,#570000);background-image:-o-linear-gradient(top,#870000,#570000);background-image:linear-gradient(to bottom,#870000,#570000);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#870000,endColorstr=#570000);}
 .btn-join a,.btn-join a:visited{color:#FFF;}
 .btn-join:hover{border:1px solid #450111;text-decoration:none;background-image:none;color:#FFF;background-color:#870000} /* redsign: added color, background-color to override default BS5 higher specificity */
@@ -243,6 +260,7 @@ select{padding:5px;margin:0;-webkit-border-radius:4px;-moz-border-radius:4px;bor
 #top #signupBtn, #top #logoutButton{position:relative;right:auto;top:auto;}
 #top #loginButton{width:100%;float:left;margin:0;height:auto;font-size:16px;}
 
+.text-muted {padding-left: .5rem; padding-bottom: .5rem;}
 
 @media screen and (min-width:0px) and (max-width:696px){
 #main{padding-top:115px !important;}
@@ -557,7 +575,7 @@ iframe.video.wide{min-height:170px;}
 html{overflow-y:scroll;width:100%;margin:0;padding:0;font-size:100%;text-rendering:optimizeLegibility;-webkit-text-size-adjust:100%;text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;-o-font-smoothing:antialiased;font-smoothing:antialiased;}
 nav ul, nav li{margin:0;padding:0;list-style-type:none;list-style-position:outside;}
 nav a{text-decoration:none;}
-.nav-mobile{overflow:auto;position:fixed;top:0;bottom:0;right:-13.755em;width:13.755em;height:100%;padding:0px;border-left:1px solid rgba(0,0,0,0.3);background-color:#ECECEC;-webkit-overflow-scrolling:touch;-webkit-box-shadow:0 0 8px 0 rgba(0,0,0,0.25) inset;-moz-box-shadow:0 0 8px 0 rgba(0,0,0,0.25) inset;box-shadow:0 0 8px 0 rgba(0,0,0,0.25) inset;-webkit-transform:translate(0, 0);-moz-transform:translate(0, 0);-ms-transform:translate(0, 0);-o-transform:translate(0, 0);transform:translate(0, 0);-webkit-transition:0.25s ease;-moz-transition:0.25s ease;-o-transition:0.25s ease;transition:0.25s ease;}
+.nav-mobile{overflow:auto;position:fixed;top:0;bottom:0;right:-13.755em;width:13.755em;height:100%;padding:0px;border-left:1px solid rgba(0,0,0,0.3);background-color:#ECECEC;z-index:6100;-webkit-overflow-scrolling:touch;-webkit-box-shadow:0 0 8px 0 rgba(0,0,0,0.25) inset;-moz-box-shadow:0 0 8px 0 rgba(0,0,0,0.25) inset;box-shadow:0 0 8px 0 rgba(0,0,0,0.25) inset;-webkit-transform:translate(0, 0);-moz-transform:translate(0, 0);-ms-transform:translate(0, 0);-o-transform:translate(0, 0);transform:translate(0, 0);-webkit-transition:0.25s ease;-moz-transition:0.25s ease;-o-transition:0.25s ease;transition:0.25s ease;}
 .nav-mobile.active{-webkit-transform:translate(-13.755em, 0);-moz-transform:translate(-13.755em, 0);-ms-transform:translate(-13.755em, 0);-o-transform:translate(-13.755em, 0);transform:translate(-13.755em, 0);}
 .nav-mobile h3{margin-top:0;}
 .nav-mobile nav ul.level2 li{padding:0;margin:0;border-bottom:1px solid #cfcfcf;}
